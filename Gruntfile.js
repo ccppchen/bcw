@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
             client: {
-                files: [ '*.html', 'styles/*', 'scripts/*', 'images/**/*'],
+                files: [ 'app/*.html', 'static/styles/*', 'static/scripts/*', 'static/images/**/*'],
                 options: {
                     livereload: true
                 }
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
          },
          dist: {
              files: {
-                 'dist/scripts/default.min.js': 'dist/scripts/default.js'
+                 'scripts/iscroll.min.js': 'scripts/iscroll.js'
              }
          }
      	},
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
             files: [{
             	expand: true,
             	cwd: 'images',
-            	src: ['*.{png,jpg,jpeg,gif,webp,svg}'],
+            	src: ['static/*.{png,jpg,jpeg,gif,webp,svg}'],
             	dest: 'dist/images'
             }]
           }
