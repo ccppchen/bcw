@@ -2,6 +2,8 @@ body { background: #f7f7f7; }
 
 .nopadding { padding: 0 !important; }
 
+.nomar { margin: 0 !important; }
+
 .padding-v { padding: 10px 0; }
 
 .padding-h { padding: 0 10px; }
@@ -45,6 +47,8 @@ body { background: #f7f7f7; }
 
 .cp-bar-header .button.button-clear { padding-right: 2px; padding-left: 2px; font-weight: 300; font-size: 17px; }
 
+.cp-con { position: relative; margin-top: 44px; margin-bottom: 49px; }
+
 /*top */
 .cp-gotop { width: 50px; height: 50px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; position: fixed; bottom: -100px; right: 20px; text-align: center; color: #d4362a; border: 1px solid #e7e7e7; padding-top: 25px; z-index: 99; background: #fff url(../images/gotop.png) center 8px no-repeat; -webkit-background-size: 20px 20px; background-size: 20px 20px; }
 
@@ -60,5 +64,12 @@ body { background: #f7f7f7; }
 .cp-bar-footer .tabs-icon-top.tabs .tab-item.current { color: #d4362a; }
 
 * { -webkit-tap-highlight-color: transparent; }
+
+.cp-bar-header .item-input-wrapper { background: #fff; position: relative; }
+.cp-bar-header .item-input-wrapper input { padding: 5px 5px 5px 34px; }
+
+.cp-icon-search { position: absolute; left: 5px; width: 29px; height: 29px; text-align: center; line-height: 29px; background: url(../images/search2.png) center center no-repeat; background-size: 20px 20px; }
+
+.icon { display: inline-block; font-size: 30px; margin: 0 auto; height: 30px; }
 
 /*# sourceMappingURL=comm.css.map */

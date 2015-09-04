@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.wrapper { position: absolute; z-index: 1; top: 44px; bottom: 0; left: 0; width: 100%; overflow: hidden; }
+
+.scroller { position: absolute; z-index: 1; -webkit-tap-highlight-color: transparent; width: 100%; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none; }
+
 .cp-logo { background: url(../images/logo.png) no-repeat center center; background-size: 67px 33px; }
 
 .cp-search { width: 42px; background: url(../images/search.png) no-repeat center 7px !important; background-size: 21px 21px !important; }
@@ -28,11 +32,9 @@
 
 .scrollBox2 .bd li { width: 50%; float: left; font-size: 14px; padding: 0 8px; background: #fff; }
 
-.scrollBox2 .bd li a { display: block; }
+.scrollBox2 .bd li a { display: block; position: relative; }
 
-.scrollBox2 .bd li p.text-hidden2 { text-align: left; font-size: 12px; color: #666; }
-
-.scrollBox2 .bd li img { background: url(../images/loading.gif) #fff center center no-repeat; }
+.scrollBox2 .bd li p.text-hidden2 { text-align: left; font-size: 12px; color: #666; line-height: 18px; }
 
 .scrollBox2 .hd { height: 30px; line-height: 30px; padding: 0 5px; margin: 8px 0; overflow: hidden; font-size: 18px; }
 
@@ -41,6 +43,8 @@
 .scrollBox2 .hd li { display: inline-block; width: 10px; height: 10px; background: #fff; margin: 0 5px; vertical-align: middle; overflow: hidden; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; text-indent: -8888em; border: 1px solid #d13926; }
 
 .scrollBox2 .hd .on { background: #d13926; }
+
+.cp-scroll-box .scrollBox2 .bd li { margin-bottom: 10px; }
 
 .cp-increat .row .col { overflow: hidden; }
 .cp-increat .row .col img { height: 138px; }
@@ -65,5 +69,9 @@
 .scroller2 li:last-child { border-right: none; }
 
 .scroller2 li.current { border-bottom: 3px solid #d13926; color: #d13926; }
+
+.scroller2 .tabBar.nomar li { height: 50px; line-height: 50px; }
+
+.cp-scroll-box .scrollBox2 .bd li .cp-hot { position: absolute; top: 1px; right: 1px; width: 28px; height: 28px; }
 
 /*# sourceMappingURL=main.css.map */

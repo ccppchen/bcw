@@ -1,38 +1,20 @@
 define(function(require, exports, module) {
-
   	var jquery = require('jquery');
-	var touchSlide = require('TouchSlide');
-	var iscroll = require('iscroll');
 
-	TouchSlide({ 
-		slideCell:"#slideBox1",
-		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
-		mainCell:".bd ul", 
-		effect:"leftLoop", 
-		autoPage:true, //自动分页
-		cancelable:true
-		// switchLoad:"data-original"
+	// searchInput
+	function backSearch(){
+		var clientHeight = $('.item-input-wrapper').width();
+		var right = (clientHeight - 15);  
+		$('.icon-search.cp-icon-search').css({'left': right + 'px' });
+		$('.searchInput').css('padding-left', '5px');
+	}
+	$('.searchInput').on('blur', function(){
+		$('.icon-search.cp-icon-search').css({'left': '5px'});
+		$(this).css('padding-left', '34px');
 	});
-	TouchSlide({ 
-		slideCell:"#scrollBox2",
-		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
-		effect:"leftLoop", 
-		autoPage:true, //自动分页
-		cancelable:true
-		// switchLoad:"data-original" //切换加载，真实图片路径为"data-original" 
+	$('.searchInput').on('focus', function(){
+		backSearch();
 	});
-	TouchSlide({ 
-		slideCell:"#scrollBox3",
-		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
-		effect:"leftLoop", 
-		autoPage:true, //自动分页
-		cancelable:true
-		// switchLoad:"data-original" //切换加载，真实图片路径为"data-original" 
-	});
-	// var myscroll1=new IScroll("#wrapper",{hScrollbar:false, vScrollbar:false, click: true, tap: true});
-	myScroll = new IScroll('#wrapper2', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false, click: true, tap: true });
-
-
   	/*tab选项卡*/
 	jQuery.Huitab =function(tabBar,tabCon,class_name,tabEvent,i){
 	  	var $tab_menu=$(tabBar);
@@ -51,6 +33,7 @@ define(function(require, exports, module) {
 		});
 	}
 	$.Huitab(".tabBar li",".barContent .cp-scroll-box","current","tap","0");
+
 	//javascript Document gotop
 	function chinaz(){
 		this.init();
@@ -84,6 +67,9 @@ define(function(require, exports, module) {
 		
 	}
 	var chinaz = new chinaz();
+
+
+	
 });
 
 
