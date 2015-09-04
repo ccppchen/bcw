@@ -5,30 +5,32 @@
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../static/styles/ionic.min.css">
-	<link rel="stylesheet" type="text/css" href="../static/styles/main.css?12121212">
+	<link rel="stylesheet" type="text/css" href="../static/styles/comm.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles/main.css">
 </head>
 <body>
+	
 	<!-- header -->
-	<div class="bar bar-header bar-assertive" style="position: fixed; top:0;">
+	<div class="cp-bar-header bar-assertive">
 		<button class="button button-clear cp-search"></button>
-		<h1 class="title cp-logo"></h1>
+		<h1 class="cp-title cp-logo"></h1>
 	</div>
 	<!-- content -->
-	<div class="content">
+	<div class="cp-con" style="position: relative; margin-top: 44px; margin-bottom:49px;">
 		<div id="slideBox1" class="slideBox">
 			<div class="bd">
 				<ul>
 					<li>
-						<a class="pic" href="#"><img _src="../static/images/1.jpg" src="../static/images/blank.png"/></a>
+						<a class="pic" href="#"><img src="../static/images/1.jpg"/></a>
 					</li>
 					<li>
-						<a class="pic" href="#"><img _src="../static/images/2.jpg" src="../static/images/blank.png"/></a>
+						<a class="pic" href="#"><img src="../static/images/2.jpg"/></a>
 					</li>
 					<li>
-						<a class="pic" href="#"><img _src="../static/images/3.jpg" src="../static/images/blank.png"/></a>
+						<a class="pic" href="#"><img src="../static/images/3.jpg"/></a>
 					</li>
 					<li>
-						<a class="pic" href="#"><img _src="../static/images/4.jpg" src="../static/images/blank.png"/></a>
+						<a class="pic" href="#"><img src="../static/images/4.jpg"/></a>
 					</li>
 				</ul>
 			</div>
@@ -37,118 +39,717 @@
 			</div>
 		</div>
 
-	<div class="cp-list-tabs row nopadding">
-		<a class="col col-25 padding-v text-center">
-			<i class="circle"></i>
-			团购
-		</a>
-		<a class="col col-25 padding-v text-center">
-			<i class="circle"></i>
-			早市
-		</a>
-		<a class="col col-25 padding-v text-center">
-			<i class="circle"></i>
-			红包
-		</a>
-		<a class="col col-25 padding-v text-center">
-			<i class="circle"></i>
-			分类
-		</a>
-	</div>
+		<div class="cp-list-tabs row nopadding">
+			<a class="col col-25 padding-v text-center">
+				<i class="circle"></i>
+				团购
+			</a>
+			<a class="col col-25 padding-v text-center">
+				<i class="circle"></i>
+				早市
+			</a>
+			<a class="col col-25 padding-v text-center">
+				<i class="circle"></i>
+				红包
+			</a>
+			<a class="col col-25 padding-v text-center">
+				<i class="circle"></i>
+				分类
+			</a>
+		</div>
 	
-	<!-- adv -->
-	<div class="cp-display">
-		<img class="img-pons" src="../static/images/blank.png" data-echo="../static/images/display1.png" height="223" width="640">
-	</div>
+		<!-- adv -->
+		<div class="cp-display">
+			<img class="img-pons" src="../static/images/display1.png" height="223" width="640">
+		</div>
 
-	<!-- cp-increat -->
-	<div class="cp-increat">
-		<div class="row">
-			<div class="col col-50 nopadding">
-				<img src="../static/images/blank.png" data-echo="../static/images/increat1.png" class="img-pons">
-			</div>
-			<div class="col col-50 nopadding">
-				<img src="../static/images/blank.png" data-echo="../static/images/increat2.png" class="img-pons">
-				<img style="margin-top: 6px;" src="../static/images/blank.png" data-echo="../static/images/increat3.png" class="img-pons">
+		<!-- cp-increat -->
+		<div class="cp-increat">
+			<div class="row">
+				<div class="col col-50 nopadding">
+					<img src="../static/images/increat1.png" class="img-pons">
+				</div>
+				<div class="col col-50 nopadding">
+					<img src="../static/images/increat2.png" class="img-pons">
+					<img style="margin-top: 6px;" src="../static/images/increat3.png" class="img-pons">
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- scrollBox -->
-	<div class="cp-scroll-box">
-		<div id="scrollBox2" class="scrollBox2">
+
+		<!-- scrollBox 新品尝鲜 -->
+		<div class="cp-scroll-box">
+			<div id="scrollBox2" class="scrollBox2">
+				<div class="hd clearfix">
+					<div class="cp-hd-fl fl"><span class="span-red fl"></span>新品尝鲜</div>
+					<ul class="fr"></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic1.jpg" /></a>
+								<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic2.jpg" /></a>
+								<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic3.jpg" /></a>
+								<p class="text-hidden2">武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic4.jpg" /></a>
+								<p class="text-hidden2">被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic5.jpg" /></a>
+								<p class="text-hidden2">火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1-3</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic6.jpg" /></a>
+								<p class="text-hidden2">杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+						</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- scrollBox 热销美食-->
+		<div class="cp-scroll-box">
+			<div id="scrollBox3" class="scrollBox2">
+				<div class="hd clearfix">
+					<div class="cp-hd-fl fl"><span class="span-red fl"></span>热销美食</div>
+					<ul class="fr"></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic1.jpg" /></a>
+								<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic2.jpg" /></a>
+								<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic3.jpg" /></a>
+								<p class="text-hidden2">武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic4.jpg" /></a>
+								<p class="text-hidden2">被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic5.jpg" /></a>
+								<p class="text-hidden2">火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1-3</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic6.jpg" /></a>
+								<p class="text-hidden2">杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相</p>
+								<p class="red cp-price"><i class="rmb">¥</i>19.9</p>
+							</li>
+						</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 美食分类 -->
+		<div class="scrollBox2">
 			<div class="hd clearfix">
-				<div class="cp-hd-fl fl"><span class="span-red fl"></span>新品尝鲜</div>
-				<ul class="fr"></ul>
+				<div class="cp-hd-fl fl"><span class="span-red fl"></span>美食分类</div>
 			</div>
-			<div class="bd">
-					<ul>
-						<li>
-							<a class="pic" href="#"><img class="img-pons" _src="../static/images/wyPic1.jpg" src="../static/images/blank.png" /></a>
-							<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
-						</li>
-						<li>
-							<a class="pic" href="#"><img class="img-pons" _src="../static/images/wyPic2.jpg" src="../static/images/blank.png" /></a>
-							<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
-						</li>
-					</ul>
+			<div class="cp-foot-list">
+				<div class="list">
 
-					<ul>
-						<li>
-							<a class="pic" href="#"><img class="img-pons" _src="../static/images/wyPic3.jpg" src="../static/images/blank.png" /></a>
-							<p class="text-hidden2">武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本</p>
-						</li>
-						<li>
-							<a class="pic" href="#"><img class="img-pons" _src="../static/images/wyPic4.jpg" src="../static/images/blank.png" /></a>
-							<p class="text-hidden2">被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官</p>
-						</li>
-					</ul>
+				    <a class="item item-avatar" href="#">
+				      <img src="../static/images/foot-1.png" height="68" width="69">
+				      <h2>Venkman</h2>
+				      <p>Back off, man. I'm a scientist.</p>
+				    </a>
 
-					<ul>
-						<li>
-							<a class="pic" href="#"><img class="img-pons" _src="../static/images/wyPic5.jpg" src="../static/images/blank.png" /></a>
-							<p class="text-hidden2">火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1-3</p>
-						</li>
-						<li>
-							<a class="pic" href="#"><img class="img-pons" _src="../static/images/wyPic6.jpg" src="../static/images/blank.png" /></a>
-							<p class="text-hidden2">杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相</p>
-						</li>
-					</ul>
+				    <a class="item item-avatar" href="#">
+				      <img src="../static/images/foot-1.png" height="68" width="69">
+				      <h2>Venkman</h2>
+				      <p>Back off, man. I'm a scientist.</p>
+				    </a>
+
+				    <a class="item item-avatar" href="#">
+				      <img src="../static/images/foot-1.png" height="68" width="69">
+				      <h2>Venkman</h2>
+				      <p>Back off, man. I'm a scientist.</p>
+				    </a>
+
+				    <a class="item item-avatar" href="#">
+				      <img src="../static/images/foot-1.png" height="68" width="69">
+				      <h2>Venkman</h2>
+				      <p>Back off, man. I'm a scientist.</p>
+				    </a>
+
+				    <a class="item item-avatar" href="#">
+				      <img src="../static/images/foot-1.png" height="68" width="69">
+				      <h2>Venkman</h2>
+				      <p>Back off, man. I'm a scientist.</p>
+				    </a>
+
+				    <a class="item item-avatar" href="#">
+				      <img src="../static/images/foot-1.png" height="68" width="69">
+				      <h2>Venkman</h2>
+				      <p>Back off, man. I'm a scientist.</p>
+				    </a>
+
+				</div>
 			</div>
 
 		</div>
-	</div>
+		
+		<!-- lefLoop -->
+		<div class="wrapper2" id="wrapper2">
+			<div class="scroller2">
+				<ul class="tabBar">
+					<li>
+					    <i class="icon ion-home"></i>
+					    电影伴侣
+					</li>
+					<li>
+					    <i class="icon ion-home"></i>
+					    游戏之友
+					</li>
+					<li>
+					    <i class="icon ion-home"></i>
+					    午后茶点
+					</li>
+					<li>
+					    <i class="icon ion-home"></i>
+					    瘦食兼顾
+					</li>
+					<li>
+					    <i class="icon ion-home"></i>
+					    聚会小食
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- list -->
+		<div class="barContent">
+			<div class="cp-scroll-box">
+				<div id="sss" class="scrollBox2">
+					<div class="bd">
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic1.jpg" /></a>
+									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic2.jpg" /></a>
+									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic3.jpg" /></a>
+									<p class="text-hidden2">武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic4.jpg" /></a>
+									<p class="text-hidden2">被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic5.jpg" /></a>
+									<p class="text-hidden2">火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1-3</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic6.jpg" /></a>
+									<p class="text-hidden2">杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="cp-scroll-box">
+				<div id="sss" class="scrollBox2">
+					<div class="bd">
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic1.jpg" /></a>
+									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic2.jpg" /></a>
+									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic3.jpg" /></a>
+									<p class="text-hidden2">武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic4.jpg" /></a>
+									<p class="text-hidden2">被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic5.jpg" /></a>
+									<p class="text-hidden2">火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1-3</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic6.jpg" /></a>
+									<p class="text-hidden2">杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="cp-scroll-box">
+				<div id="sss" class="scrollBox2">
+					<div class="bd">
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic1.jpg" /></a>
+									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic2.jpg" /></a>
+									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic3.jpg" /></a>
+									<p class="text-hidden2">武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic4.jpg" /></a>
+									<p class="text-hidden2">被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic5.jpg" /></a>
+									<p class="text-hidden2">火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1-3</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic6.jpg" /></a>
+									<p class="text-hidden2">杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="cp-scroll-box">
+				<div id="sss" class="scrollBox2">
+					<div class="bd">
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic1.jpg" /></a>
+									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic2.jpg" /></a>
+									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic3.jpg" /></a>
+									<p class="text-hidden2">武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic4.jpg" /></a>
+									<p class="text-hidden2">被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic5.jpg" /></a>
+									<p class="text-hidden2">火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1-3</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic6.jpg" /></a>
+									<p class="text-hidden2">杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="cp-scroll-box">
+				<div id="sss" class="scrollBox2">
+					<div class="bd">
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic1.jpg" /></a>
+									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic2.jpg" /></a>
+									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic3.jpg" /></a>
+									<p class="text-hidden2">武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic4.jpg" /></a>
+									<p class="text-hidden2">被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic5.jpg" /></a>
+									<p class="text-hidden2">火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1-3</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic6.jpg" /></a>
+									<p class="text-hidden2">杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相</p>
+									<div class="red cp-price clearfix">
+										<div class="fl">
+											<i class="rmb">¥</i>19.9
+										</div>
+										<div class="fr">
+											<span>|</span>
+											<s>¥29.00</s>
+										</div>
+									</div>
+								</li>
+							</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<!-- footer -->
-	<div class="tabs tabs-icon-top" style="position: fixed; bottom:0;">
-	  <a class="tab-item">
-	    <i class="icon ion-home"></i>
-	    首页
-	  </a>
-	  <a class="tab-item">
-	    <i class="icon ion-star"></i>
-	    用户
-	  </a>
-	  <a class="tab-item">
-	    <i class="icon ion-gear-a"></i>
-	    购物车
-	  </a>
-	  <a class="tab-item">
-	    <i class="icon ion-gear-a"></i>
-	    分类
-	  </a>
+	 <!-- footer -->
+	<div class="cp-bar-footer">
+		<div class="tabs tabs-icon-top">
+		  <a class="tab-item current">
+		    <i class="icon ion-home"></i>
+		    首页
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-user"></i>
+		    用户
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-account"></i>
+		    购物车
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-list"></i>
+		    分类
+		  </a>
+		</div>
 	</div>
-
+ 	
 	<script src="../sea-modules/sea.js"></script>
-	<script type="text/javascript" src="../sea-modules/echo.js"></script>
 	<script type="text/javascript" src="../static/scripts/config.js"></script>
 	<script>
 		seajs.use("../static/scripts/main");
-		echo.init({
-		  offset: 100,
-		  throttle: 250,
-		  unload: false
-		});
 	</script>
 </body>
 </html>

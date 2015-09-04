@@ -1,0 +1,50 @@
+// minmax
+$bg: #f7f7f7; $red: #d13926; $borcolor: #ececec;
+
+// iscroll
+// .wrapper { position: absolute; z-index: 1; top: 44px; bottom: 0; left: 0; width: 100%; overflow: hidden; }
+// .scroller { position: absolute; z-index: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none; }
+// 导航
+.cp-logo { background: url(../images/logo.png) no-repeat center center; background-size: 67px 33px; }
+.cp-search { width: 42px; background: url(../images/search.png) no-repeat center 7px !important; background-size: 21px 21px !important; }
+// 轮播
+.content { margin-top: 44px; margin-bottom: 49px; }
+.slideBox { position: relative; width: 100%; height: 152px; overflow: hidden; }
+.slideBox .cp-hd { position: relative; height: 20px; line-height: 20px; bottom: 20px; right: 0; z-index: 8; }
+.slideBox .cp-hd li { float: left; width: 8px; height: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; background: #000; text-indent: -9999px; margin: 0 6px; }
+.slideBox .cp-hd li.on { background: #ff8a01; }
+.slideBox .bd { position: relative; z-index: 1; }
+.slideBox .bd li { position: relative; }
+.slideBox .bd li a { display: block }
+.slideBox .bd li img { width: 100%; height: 152px; display: block; }
+
+/* 多图滚动 */
+.scrollBox2 .bd { margin-top: 10px; }
+.scrollBox2 .bd ul { border-bottom: 1px solid $borcolor; overflow: hidden; margin-bottom: 10px; }
+.scrollBox2 .bd li { width: 50%; float: left; font-size: 14px; padding: 0 8px; background: #fff; }
+.scrollBox2 .bd li a { display: block; }
+.scrollBox2 .bd li p.text-hidden2 { text-align: left; font-size: 12px; color: #666; }
+.scrollBox2 .bd li img { background: url(../images/loading.gif) #fff center center no-repeat; }
+.scrollBox2 .hd { height: 30px; line-height: 30px; padding: 0 5px; margin: 8px 0; overflow: hidden; font-size: 18px; }
+.scrollBox2 .hd ul { display: inline-block; }
+.scrollBox2 .hd li { display: inline-block; width: 10px; height: 10px; background: #fff; margin: 0 5px; vertical-align: middle; overflow: hidden; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; text-indent: -8888em; border: 1px solid $red; }
+.scrollBox2 .hd .on { background: $red; }
+
+// cp-increat
+.cp-increat .row .col { overflow: hidden;
+	img { height: 138px; }
+	&:nth-child(2) { img { height: 66px; float: left; width: calc(100% - 6px); margin-left: 6px; }
+	}
+}
+// foot-list
+.cp-foot-list .list { overflow: hidden;
+	a.item { width: 50%; float: left; margin-left: 0; }
+}
+.tabBar { @include pie-clearfix(); margin-top: 10px; }
+.tabBar li { float: left; width: 72px; height: 62px; }
+.tabBar li .icon{ display: block; width: 100%; height: 35px;}
+.wrapper2 { position: relative; z-index: 1; height: 72px; width: 100%; background: #fff; overflow: hidden; -ms-touch-action: none; }
+.scroller2 { position: absolute; z-index: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 360px; height: 72px; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none; }
+.scroller2 li { width: 72px; height: 62px; float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; background-color: #fff; font-size: 14px; overflow: hidden; text-align: center; }
+.scroller2 li:last-child{ border-right:none;}
+.scroller2 li.current{ border-bottom: 3px solid $red; color: $red;}
