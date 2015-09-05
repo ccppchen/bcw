@@ -4,6 +4,8 @@ body { background: #f7f7f7; }
 
 .nomar { margin: 0 !important; }
 
+.padding-vertical { padding: 40px 0; }
+
 .padding-v { padding: 10px 0; }
 
 .padding-h { padding: 0 10px; }
@@ -22,6 +24,8 @@ body { background: #f7f7f7; }
 
 .red { color: #d13926; }
 
+.white { color: #fff !important; }
+
 .cp-price { color: #d13926; font-size: 18px; border-top: 1px solid #e7e7e7; line-height: 30px; margin-bottom: 0; }
 
 .cp-price .rmb { font-size: 12px; }
@@ -39,6 +43,8 @@ body { background: #f7f7f7; }
 
 .bar-assertive { border-color: #e42112; background-color: #ef473a; color: #fff; display: flex; }
 
+.bar-table { border-color: #b9b9b9; border-bottom: 1px solid #b9b9b9; background-color: #ececec; color: #000; display: flex; }
+
 .cp-bar-header { position: fixed; top: 0; z-index: 9999; width: 100%; padding: 5px; height: 44px; overflow: hidden; }
 
 .cp-title { position: absolute; top: 0; right: 0; left: 0; z-index: 0; overflow: hidden; margin: 0 10px; min-width: 30px; height: 43px; text-align: center; text-overflow: ellipsis; white-space: nowrap; font-size: 17px; font-weight: 500; line-height: 44px; }
@@ -47,7 +53,9 @@ body { background: #f7f7f7; }
 
 .cp-bar-header .button.button-clear { padding-right: 2px; padding-left: 2px; font-weight: 300; font-size: 17px; }
 
-.cp-con { position: relative; margin-top: 44px; margin-bottom: 49px; }
+.cp-con { margin-bottom: 49px; }
+
+.cp-include-con { margin-top: 44px; overflow: hidden; }
 
 /*top */
 .cp-gotop { width: 50px; height: 50px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; position: fixed; bottom: -100px; right: 20px; text-align: center; color: #d4362a; border: 1px solid #e7e7e7; padding-top: 25px; z-index: 99; background: #fff url(../images/gotop.png) center 8px no-repeat; -webkit-background-size: 20px 20px; background-size: 20px 20px; }
@@ -71,5 +79,22 @@ body { background: #f7f7f7; }
 .cp-icon-search { position: absolute; left: 5px; width: 29px; height: 29px; text-align: center; line-height: 29px; background: url(../images/search2.png) center center no-repeat; background-size: 20px 20px; }
 
 .icon { display: inline-block; font-size: 30px; margin: 0 auto; height: 30px; }
+
+.cp-error { font-size: 14px; line-height: 24px; margin-bottom: 5px; }
+
+.icon-error { padding-left: 25px; line-height: 30px; background: url(../images/error.png) left center no-repeat; background-size: 20px 20px; }
+
+.cp-input-group .item-input { border: 1px solid #b2b2b2; background: #fff; margin-bottom: 10px; padding-bottom: 4px; border-radius: 2px; }
+.cp-input-group .item-input > input { line-height: 24px; font-size: 18px; }
+
+.cp-yzm { width: 120px; margin-right: 6px; }
+
+.cp-p-color { color: #999; font-size: 14px; }
+
+.breadcrumb { line-height: 39px; height: 39px; font-size: 12px; margin-bottom: 10px; color: #999; }
+
+.breadcrumb span { padding: 0 4px; }
+
+.line { font-size: 0px; line-height: 0px; border-top: solid 1px #d13926; float: none; margin-bottom: 10px; }
 
 /*# sourceMappingURL=comm.css.map */

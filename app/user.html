@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../static/styles/ionic.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles/comm.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles/main.css">
+</head>
+<body>
+	
+	<!-- header -->
+	<div class="cp-bar-header bar-assertive">
+		<button class="button button-clear cp-search"></button>
+		<h1 class="cp-title white">个人资料</h1>
+	</div>
+	<!-- content -->
+	<div class="cp-include-con cp-con">
+		<ul class="list cp-user-list">
+			<li class="item item-avatar-right">
+				<img src="../static/images/head.png">
+				<h2>头像</h2>
+			</li>
+			<li class="item clearfix">
+				<h2 class="fl">会员名</h2>
+				<p class="fr">13957198384</p>
+			</li>
+			<li class="item clearfix cp-radio">
+				<h2 class="fl">会员名</h2>
+				<div class="fr">
+					<input type="radio" id="input-man" name="radio" checked="checked"> 男
+					<input type="radio" id="input-woman" name="radio"> 女
+					<input type="radio" id="input-secret" name="radio"> 保密
+					<!-- icheck的使用方法 http://www.exp99.com/jswz/f2e/1408696007_34.html -->
+				</div>
+			</li>
+			<li class="item item-divider"></li>
+			<li class="item item-toggle item-button-right">
+				我的收货地址
+				<a class="button button-clear icon ion-ios-arrow-right"></a>
+			</li>
+		</ul>
+
+	</div>
+	 <!-- footer -->
+	<div class="cp-bar-footer">
+		<div class="tabs tabs-icon-top">
+		  <a class="tab-item">
+		    <i class="icon ion-home"></i>
+		    首页
+		  </a>
+		  <a class="tab-item current">
+		    <i class="icon ion-user"></i>
+		    用户
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-account"></i>
+		    购物车
+		  </a>
+		  <a class="tab-item">
+		    <i class="icon ion-list"></i>
+		    分类
+		  </a>
+		</div>
+	</div>
+ 	
+	<script src="../sea-modules/sea.js"></script>
+	<script type="text/javascript" src="../static/scripts/config.js"></script>
+	<script>
+		seajs.use("../static/scripts/main");
+	</script>
+</body>
+</html>

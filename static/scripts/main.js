@@ -1,5 +1,6 @@
 define(function(require, exports, module) {
   	var jquery = require('jquery');
+  	var icheck = require('icheck');
 
 	// searchInput
 	function backSearch(){
@@ -33,6 +34,41 @@ define(function(require, exports, module) {
 		});
 	}
 	$.Huitab(".tabBar li",".barContent .cp-scroll-box","current","tap","0");
+
+	// 折叠
+	jQuery.Huifold = function(obj,obj_c,speed,obj_type,Event){
+		if(obj_type == 2){
+			$(obj+":first").find("b").html("-");
+			$(obj_c+":first").show();
+		}
+		$(obj).bind(Event,function(){
+			if($(this).next().is(":visible")){
+				if(obj_type == 2){
+					return false;
+				}
+				else{
+					$(this).next().slideUp(speed).end().removeClass("selected");
+					$(this).find("b").html("+");
+				}
+			}
+			else{
+				if(obj_type == 3){
+					$(this).next().slideDown(speed).end().addClass("selected");
+					$(this).find("b").html("-");
+				}else{
+					$(obj_c).slideUp(speed);
+					$(obj).removeClass("selected");
+					$(obj).find("b").html("+");
+					$(this).next().slideDown(speed).end().addClass("selected");
+					$(this).find("b").html("-");
+				}
+			}
+		});
+	};
+
+	$(function(){
+		$.Huifold("#Huifold1 .cp-setting-list .item","#Huifold1 .cp-setting-list .item-hide","fast",3,"click"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
+	})
 
 	//javascript Document gotop
 	function chinaz(){
@@ -68,7 +104,14 @@ define(function(require, exports, module) {
 	}
 	var chinaz = new chinaz();
 
-
+	// radio checkbox
+	$('input').iCheck({ 
+	  labelHover : false, 
+	  cursor : true, 
+	  checkboxClass : 'icheckbox_minimal-red', 
+	  radioClass : 'iradio_minimal-red', 
+	  increaseArea : '20%' 
+	}); 
 	
 });
 

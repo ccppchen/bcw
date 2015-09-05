@@ -1,0 +1,19 @@
+.cp-user-list{
+	padding-top: 20px;
+	li.item{ margin-left: 0; margin-right: 0;}
+	li.cp-radio{ line-height: 28px;}
+	li.item-avatar-right h2{ line-height: 40px;}
+	.item{ 
+		.fl{ margin-bottom: 0px;} 
+		.fr{ line-height: 19px;}
+	}
+}
+.cp-setting-list {
+	.item{ padding-top: 12px; padding-bottom: 12px;}
+	.item-hide{ background: #fff; display: none;
+				p{ line-height: 24px; color: #333; font-size: 14px;}
+	}
+}
+.cp-setting-list.cp-about-list{
+	>.item-hide{ display: block;}
+}
