@@ -1,0 +1,58 @@
+.cp-detals {
+	.tabs-top.tabs-striped .tab-item.on{
+		border-bottom-color: $red; color: $red;
+		border-width: 0px 0px 2px 0px !important;
+		border-style: solid;
+	}
+	.cp-detals-con{
+		img{ width: 100%; height: auto;}
+	}
+	.tabs-striped.tabs-top{
+		position: fixed;
+		top:0;
+		width: 100%;
+		z-index: 999;
+	}
+	.cp-detals-con{
+		width: 100%;
+	}
+}
+
+.cp-footer-shop{
+	.row{
+		border-top: 1px solid $red;
+		background: #fff;
+	}
+	.col{
+		height: 49px;
+		line-height: 49px;
+		overflow: hidden;
+		color: #666;
+		&.col-67{ 
+			background: $red;
+			color: #fff;
+		}
+	}
+}
+
+.cp-talk-list {
+	.cp-talk-item{
+		border-bottom: 1px solid #ddd;
+		padding: 16px;
+		color: #666;
+		line-height: 24px;
+		.cp-talk-item-inner{
+			padding-left: 10px;
+			position: relative;
+			margin-bottom: 10px;
+		    &:first-child::before{
+				content: ' ';
+			    position: absolute;
+			    width: 4px;
+			    height: 18px;
+			    left: 0;
+			    top: 2px;
+			    background: #ffaa00;}
+			}
+		}
+}

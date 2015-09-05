@@ -397,6 +397,8 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 
 .cp-scroll-box .scrollBox2 .bd li .cp-hot { position: absolute; top: 1px; right: 1px; width: 28px; height: 28px; }
 
+.cp-search-error { text-align: center; padding-top: 20px; padding-bottom: 10px; color: #666; line-height: 24px; }
+
 .cp-user-list { padding-top: 20px; }
 .cp-user-list li.item { margin-left: 0; margin-right: 0; }
 .cp-user-list li.cp-radio { line-height: 28px; }
@@ -409,5 +411,20 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 .cp-setting-list .item-hide p { line-height: 24px; color: #333; font-size: 14px; }
 
 .cp-setting-list.cp-about-list > .item-hide { display: block; }
+
+.cp-password-change .button-disabled { background: #dbdbdb; border: none; color: #999; }
+
+.cp-detals .tabs-top.tabs-striped .tab-item.on { border-bottom-color: #d13926; color: #d13926; border-width: 0px 0px 2px 0px !important; border-style: solid; }
+.cp-detals .cp-detals-con img { width: 100%; height: auto; }
+.cp-detals .tabs-striped.tabs-top { position: fixed; top: 0; width: 100%; z-index: 999; }
+.cp-detals .cp-detals-con { width: 100%; }
+
+.cp-footer-shop .row { border-top: 1px solid #d13926; background: #fff; }
+.cp-footer-shop .col { height: 49px; line-height: 49px; overflow: hidden; color: #666; }
+.cp-footer-shop .col.col-67 { background: #d13926; color: #fff; }
+
+.cp-talk-list .cp-talk-item { border-bottom: 1px solid #ddd; padding: 16px; color: #666; line-height: 24px; }
+.cp-talk-list .cp-talk-item .cp-talk-item-inner { padding-left: 10px; position: relative; margin-bottom: 10px; }
+.cp-talk-list .cp-talk-item .cp-talk-item-inner:first-child::before { content: ' '; position: absolute; width: 4px; height: 18px; left: 0; top: 2px; background: #ffaa00; }
 
 /*# sourceMappingURL=main.css.map */

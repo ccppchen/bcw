@@ -1,6 +1,7 @@
 define(function(require, exports, module) {
   	var jquery = require('jquery');
   	var icheck = require('icheck');
+  	var tappy = require('tappy');
 
 	// searchInput
 	function backSearch(){
@@ -67,7 +68,7 @@ define(function(require, exports, module) {
 	};
 
 	$(function(){
-		$.Huifold("#Huifold1 .cp-setting-list .item","#Huifold1 .cp-setting-list .item-hide","fast",3,"click"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
+		$.Huifold("#Huifold1 .cp-setting-list .item","#Huifold1 .cp-setting-list .item-hide","fast",3,"tap"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
 	})
 
 	//javascript Document gotop
@@ -83,7 +84,7 @@ define(function(require, exports, module) {
 			var $backTop = this.$backTop = $('<div class="cp-gotop">顶部</div>');
 			$('body').append($backTop);
 			
-			$backTop.on('click', function(){
+			$backTop.on('tap', function(){
 				$("html, body").animate({
 					scrollTop: 0
 				}, 300);
@@ -112,6 +113,23 @@ define(function(require, exports, module) {
 	  radioClass : 'iradio_minimal-red', 
 	  increaseArea : '20%' 
 	}); 
+
+	// password-chang 输入数据后按钮去掉不可点击
+	$(function(){
+		$('.cp-password-change .item-input > input').on('keyup', function(){
+			var thisInputLenght = $(this).val().length;
+			var thisSiblingsLength = $(this).parent('.item-input').siblings().children('input').val().length;
+			if ((thisInputLenght <= 5 || thisInputLenght >= 17) && (thisSiblingsLength <= 5 || thisSiblingsLength >=17)) {
+				$('.cp-button-disabled').removeClass('button-assertive').addClass('button-disabled');
+			}else{
+				$('.cp-button-disabled').removeClass('button-disabled').addClass('button-assertive');
+			}
+		})
+	});
+
+	// alert
+	
+	
 	
 });
 

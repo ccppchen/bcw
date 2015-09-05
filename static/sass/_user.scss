@@ -17,3 +17,10 @@
 .cp-setting-list.cp-about-list{
 	>.item-hide{ display: block;}
 }
+
+// password-change
+.cp-password-change{
+	.button-disabled{
+		background: #dbdbdb;
+		border: none; color: #999;	}
+}

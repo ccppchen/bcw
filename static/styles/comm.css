@@ -22,7 +22,7 @@ body { background: #f7f7f7; }
 
 .fr { float: right; }
 
-.red { color: #d13926; }
+.red { color: #d13926 !important; }
 
 .white { color: #fff !important; }
 
@@ -42,6 +42,9 @@ body { background: #f7f7f7; }
 .span-red { width: 5px; height: 18px; display: inline-block; background: #d13926; margin: 6px 6px 6px 0; }
 
 .bar-assertive { border-color: #e42112; background-color: #ef473a; color: #fff; display: flex; }
+.bar-assertive .cp-title { color: #fff; }
+.bar-assertive .button { color: #fff; }
+.bar-assertive .searchInput { width: 100%; }
 
 .bar-table { border-color: #b9b9b9; border-bottom: 1px solid #b9b9b9; background-color: #ececec; color: #000; display: flex; }
 
@@ -83,6 +86,8 @@ body { background: #f7f7f7; }
 .cp-error { font-size: 14px; line-height: 24px; margin-bottom: 5px; }
 
 .icon-error { padding-left: 25px; line-height: 30px; background: url(../images/error.png) left center no-repeat; background-size: 20px 20px; }
+
+.cp-login-box .cp-input-group .col > img { max-height: 36px; }
 
 .cp-input-group .item-input { border: 1px solid #b2b2b2; background: #fff; margin-bottom: 10px; padding-bottom: 4px; border-radius: 2px; }
 .cp-input-group .item-input > input { line-height: 24px; font-size: 18px; }
