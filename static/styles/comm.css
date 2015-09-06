@@ -31,6 +31,8 @@ body { background: #f7f7f7; }
 .cp-price .rmb { font-size: 12px; }
 
 .cp-price .fr { color: #999; font-size: 14px; }
+.cp-price .icon { font-size: 22px; margin-left: 10px; line-height: 30px; color: #999; }
+.cp-price .icon.icon-icon-shop { font-size: 25px; }
 
 .clearfix { *zoom: 1; }
 .clearfix:after { content: ""; display: table; clear: both; }
@@ -52,9 +54,11 @@ body { background: #f7f7f7; }
 
 .cp-title { position: absolute; top: 0; right: 0; left: 0; z-index: 0; overflow: hidden; margin: 0 10px; min-width: 30px; height: 43px; text-align: center; text-overflow: ellipsis; white-space: nowrap; font-size: 17px; font-weight: 500; line-height: 44px; }
 
-.cp-bar-header .button { z-index: 1; padding: 0 8px; min-width: initial; min-height: 31px; font-weight: 400; font-size: 13px; line-height: 32px; }
+.cp-bar-header .button { z-index: 1; padding: 0 8px; min-width: initial; min-height: 31px; font-weight: 400; font-size: 18px; line-height: 32px; }
 
-.cp-bar-header .button.button-clear { padding-right: 2px; padding-left: 2px; font-weight: 300; font-size: 17px; }
+.cp-bar-header .button:last-child { position: absolute; top: 5px; right: 5px; bottom: 5px; }
+
+.cp-bar-header .button.button-clear { padding-right: 2px; padding-left: 2px; font-weight: 300; }
 
 .cp-con { margin-bottom: 49px; }
 
@@ -69,6 +73,7 @@ body { background: #f7f7f7; }
 
 /*cp-bar-footer*/
 .cp-bar-footer { position: fixed; bottom: 0; width: 100%; height: 49px; z-index: 9999; }
+.cp-bar-footer .tab-item .badge { right: calc(50% - 76px); }
 
 .cp-bar-footer .tabs-icon-top.tabs .tab-item { font-size: 14px; line-height: 7px; }
 
@@ -76,7 +81,7 @@ body { background: #f7f7f7; }
 
 * { -webkit-tap-highlight-color: transparent; }
 
-.cp-bar-header .item-input-wrapper { background: #fff; position: relative; }
+.cp-bar-header .item-input-wrapper { background: #fff; margin-left: 10px; position: relative; }
 .cp-bar-header .item-input-wrapper input { padding: 5px 5px 5px 34px; }
 
 .cp-icon-search { position: absolute; left: 5px; width: 29px; height: 29px; text-align: center; line-height: 29px; background: url(../images/search2.png) center center no-repeat; background-size: 20px 20px; }
@@ -101,5 +106,23 @@ body { background: #f7f7f7; }
 .breadcrumb span { padding: 0 4px; }
 
 .line { font-size: 0px; line-height: 0px; border-top: solid 1px #d13926; float: none; margin-bottom: 10px; }
+
+.ion-game { background: url(../images/index/index-game.png) center center no-repeat; background-size: 30px 30px; }
+
+.ion-tea { background: url(../images/index/index-tea.png) center center no-repeat; background-size: 30px 30px; }
+
+.ion-cutlery { background: url(../images/index/index-cutlery.png) center center no-repeat; background-size: 30px 30px; }
+
+.ion-waiter { background: url(../images/index/index-waiter.png) center center no-repeat; background-size: 30px 30px; }
+
+.icon-icon-left.left-martop::before { position: relative; top: 2px; }
+
+.icon-icon-heat.curr { color: #d13926; }
+
+.icon-icon-arrow-right, .icon-icon-arrow-left, .icon-icon-arrow-top, .icon-icon-arrow-bottom { font-size: 20px !important; color: #999; }
+
+.bar-table .icon-icon-left { color: #000; }
+
+.icon.icon-icon-success { font-size: 20px; color: #549800; position: relative; top: 3px; }
 
 /*# sourceMappingURL=comm.css.map */

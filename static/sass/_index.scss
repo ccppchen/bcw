@@ -39,7 +39,7 @@ $bg: #f7f7f7; $red: #d13926; $borcolor: #ececec;
 }
 // foot-list
 .cp-foot-list .list { overflow: hidden;
-	a.item { width: 50%; float: left; margin-left: 0; }
+	a.item { width: 50%; float: left; margin-left: 0; padding-left: 60px; }
 }
 .tabBar { @include pie-clearfix(); }
 .tabBar li { float: left; width: 72px; height: 62px; }

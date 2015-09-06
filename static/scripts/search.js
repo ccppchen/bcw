@@ -1,6 +1,11 @@
 define(function(require, exports, module) {
 	var main = require('./main');
 	var iscroll = require('iscroll');
+	var jquery = require('jquery');
+	var tappy = require('tappy');
 	
-	myScroll = new IScroll('#wrapper2', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false, click: true, tap: true });
+	$(function(){
+		myScroll = new IScroll('#wrapper2', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false, click: true, tap: true });
+
+	})
 });
