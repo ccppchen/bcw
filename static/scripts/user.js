@@ -1,4 +1,4 @@
-define(function(require, exports, module) {
+define(function(require) {
 	var jquery = require('jquery');
 	var tappy = require('tappy');
 	var sweetalert = require('sweetalert');

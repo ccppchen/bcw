@@ -36,7 +36,9 @@
 	<script src="../sea-modules/sea.js"></script>
 	<script type="text/javascript" src="../static/scripts/config.js"></script>
 	<script>
-		seajs.use("../static/scripts/main");
+		seajs.use("../static/scripts/main", function(tab){
+			tab.Huitab(".tabBar li",".barContent .cp-scroll-box","current","tap","0");
+		});
 	</script>
 </body>
 </html>

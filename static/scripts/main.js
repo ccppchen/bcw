@@ -1,7 +1,6 @@
 define(function(require, exports, module) {
-  	var jquery = require('jquery');
-  	var icheck = require('icheck');
-  	var tappy = require('tappy');
+  	require('jquery');
+  	require('tappy');
 
 	$(function(){
 
@@ -20,7 +19,7 @@ define(function(require, exports, module) {
 			backSearch();
 		});
 	  	/*tab选项卡*/
-		jQuery.Huitab =function(tabBar,tabCon,class_name,tabEvent,i){
+		function Huitab(tabBar,tabCon,class_name,tabEvent,i){
 		  	var $tab_menu=$(tabBar);
 			// 初始化操作
 			$tab_menu.removeClass(class_name);
@@ -35,11 +34,13 @@ define(function(require, exports, module) {
 				$(tabCon).hide();
 				$(tabCon).eq(index).show();
 			});
-		}
-		$.Huitab(".tabBar li",".barContent .cp-scroll-box","current","tap","0");
+		};
+		exports.Huitab = Huitab;
+
+		Huitab(".tabBar li",".barContent .cp-scroll-box","current","tap","0");
 
 		// 折叠
-		jQuery.Huifold = function(obj,obj_c,speed,obj_type,Event){
+		function Huifold(obj,obj_c,speed,obj_type,Event){
 			if(obj_type == 2){
 				$(obj+":first").find("b").html("-");
 				$(obj_c+":first").show();
@@ -69,9 +70,9 @@ define(function(require, exports, module) {
 			});
 		};
 
-		$(function(){
-			$.Huifold("#Huifold1 .cp-setting-list .item","#Huifold1 .cp-setting-list .item-hide","fast",3,"tap"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
-		})
+		exports.Huifold = Huifold;
+
+		Huifold("#Huifold1 .cp-setting-list .item","#Huifold1 .cp-setting-list .item-hide","fast",3,"tap"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
 
 		//javascript Document gotop
 		function chinaz(){
@@ -106,15 +107,6 @@ define(function(require, exports, module) {
 			
 		}
 		var chinaz = new chinaz();
-
-		// radio checkbox
-		$('input').iCheck({ 
-		  labelHover : false, 
-		  cursor : true, 
-		  checkboxClass : 'icheckbox_minimal-red', 
-		  radioClass : 'iradio_minimal-red', 
-		  increaseArea : '20%' 
-		}); 
 
 		// password-chang 输入数据后按钮去掉不可点击
 		$(function(){
