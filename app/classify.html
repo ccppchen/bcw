@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../static/styles/ionic.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles/comm.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles/main.css">
+</head>
+<body>
+	
+	<!-- header -->
+	<div class="cp-bar-header bar-assertive item-input-inset">
+		<button class="button button-clear icon-icon-left"></button>
+		<label class="item-input-wrapper">
+			<input class="searchInput" type="text" placeholder="输入商户名搜索">
+			<i class="icon icon-search cp-icon-search"></i>
+		</label>
+		<button class="button button-clear icon-icon-shop" style="font-size: 30px; position: relative;">
+			<span class="badge cp-badge-table">10</span>
+		</button>
+	</div>
+	<!-- content -->
+
+	<div class="cp-include-con cp-con">
+		<div class="wrapper wrapper-left" id="wrapper-left">
+			<div class="scroller">
+				<ul class="wrapper-left-tabBar">
+					<li class="current">带壳坚果</li>
+					<li>带壳坚果</li>
+					<li>健康果仁</li>
+					<li>休闲小吃</li>
+					<li>水果干</li>
+					<li>冻干系列</li>
+					<li>猪肉脯</li>
+					<li>牛肉类</li>
+					<li>海鲜类</li>
+					<li>鸡/鸭</li>
+					<li>糕点</li>
+					<li>带壳坚果</li>
+					<li>健康果仁</li>
+					<li>休闲小吃</li>
+					<li>水果干</li>
+					<li>冻干系列</li>
+					<li>猪肉脯</li>
+					<li>牛肉类</li>
+					<li>海鲜类</li>
+					<li>鸡/鸭</li>
+					<li>糕点</li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrapper wrapper-right" id="wrapper-right">
+			<div class="scroller">
+				<div class="wrapper-right-tabContent padding">
+					<div class="tabCon">内容一</div>
+					<div class="tabCon">内容二</div>
+					<div class="tabCon">内容三</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ 	
+ 	<script type="text/javascript" src="../sea-modules/iscroll.min.js"></script>
+ 	<script type="text/javascript">
+		var myscroll1=new IScroll("#wrapper-left",{hScrollbar:false, vScrollbar:false, tap: true, click: true});
+		var myscroll2=new IScroll("#wrapper-right",{hScrollbar:false, vScrollbar:false, tap: true, click: true});
+ 	</script>
+	<script src="../sea-modules/sea.js"></script>
+	<script type="text/javascript" src="../static/scripts/config.js"></script>
+	<script>
+		seajs.use("../static/scripts/main");
+	</script>
+</body>
+</html>

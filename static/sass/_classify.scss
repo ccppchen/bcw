@@ -1,0 +1,10 @@
+.wrapper-left{
+	width: 100px;
+}
+.wrapper-right{
+	left: 100px;
+	background: #fff;
+}
+.wrapper-left-tabBar li{text-align: center;height:60px;line-height:60px;border-bottom:.5px solid #bfbfbf;border-right:.5px solid #bfbfbf;background-color:#f7f7f7;font-size:14px;}
+.wrapper-left-tabBar li.current{ background-color: #fff;border-right:.5px solid #fff; color: $red;}
+.wrapper-left-tabBar,.tabContent{ height: 100%; list-style: none;}

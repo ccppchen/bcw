@@ -3,8 +3,7 @@ define(function(require, exports, module) {
   	require('tappy');
 
 	$(function(){
-
-	// searchInput
+		// searchInput
 		function backSearch(){
 			var clientHeight = $('.item-input-wrapper').width();
 			var right = (clientHeight - 15);  
@@ -37,8 +36,14 @@ define(function(require, exports, module) {
 		};
 		exports.Huitab = Huitab;
 
+		// index
 		Huitab(".tabBar li",".barContent .cp-scroll-box","current","tap","0");
 
+		// user-my-dd
+		Huitab(".cp-user-dingdan-hd li",".cp-user-dingdan-bd .con","on","tap","0");
+
+		// classify.html
+		Huitab(".wrapper-left-tabBar li",".wrapper-right-tabContent .tabCon","current","tap","0");
 		// 折叠
 		function Huifold(obj,obj_c,speed,obj_type,Event){
 			if(obj_type == 2){
@@ -46,6 +51,10 @@ define(function(require, exports, module) {
 				$(obj_c+":first").show();
 			}
 			$(obj).bind(Event,function(){
+
+				$(this).find('.icon-icon-arrow-right').toggleClass('curr');
+				$(this).find('.icon-icon-arrow-bottom').toggleClass('curr');
+
 				if($(this).next().is(":visible")){
 					if(obj_type == 2){
 						return false;
@@ -71,8 +80,10 @@ define(function(require, exports, module) {
 		};
 
 		exports.Huifold = Huifold;
-
-		Huifold("#Huifold1 .cp-setting-list .item","#Huifold1 .cp-setting-list .item-hide","fast",3,"tap"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
+		// detale.html
+		Huifold("#Huifold1 .cp-help-list .item","#Huifold1 .cp-help-list .item-hide","fast",3,"tap"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
+		// user-my-dd.html
+		Huifold(".cp-user-dd-con .list .item",".cp-user-dd-con .list .item-hide","fast",3,"tap");
 
 		//javascript Document gotop
 		function chinaz(){
@@ -109,24 +120,23 @@ define(function(require, exports, module) {
 		var chinaz = new chinaz();
 
 		// password-chang 输入数据后按钮去掉不可点击
-		$(function(){
-			$('.cp-password-change .item-input > input').on('keyup', function(){
-				var thisInputLenght = $(this).val().length;
-				var thisSiblingsLength = $(this).parent('.item-input').siblings().children('input').val().length;
-				if ((thisInputLenght <= 5 || thisInputLenght >= 17) && (thisSiblingsLength <= 5 || thisSiblingsLength >=17)) {
-					$('.cp-button-disabled').removeClass('button-assertive').addClass('button-disabled');
-				}else{
-					$('.cp-button-disabled').removeClass('button-disabled').addClass('button-assertive');
-				}
-			})
+		$('.cp-password-change .item-input > input').on('keyup', function(){
+			var thisInputLenght = $(this).val().length;
+			var thisSiblingsLength = $(this).parent('.item-input').siblings().children('input').val().length;
+			if ((thisInputLenght <= 5 || thisInputLenght >= 17) && (thisSiblingsLength <= 5 || thisSiblingsLength >=17)) {
+				$('.cp-button-disabled').removeClass('button-assertive').addClass('button-disabled');
+			}else{
+				$('.cp-button-disabled').removeClass('button-disabled').addClass('button-assertive');
+			}
 		});
-
 		// alert
 		$('.icon-icon-heat').on('tap', function(){
 			// 点击心型 变红色
 			$(this).toggleClass('curr');
 		});
 
+
+		require('./user');
 		
 	});
 	

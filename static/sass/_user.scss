@@ -12,12 +12,37 @@
 	.item{ padding-top: 12px; padding-bottom: 12px;
 		> .icon{font-size: 30px; color: #999;}
 	}
-	.item-hide{ background: #fff; display: none;
-				p{ line-height: 24px; color: #333; font-size: 14px;}
+}
+.cp-help-list{
+	.item{
+		.icon.icon-icon-arrow-right{ -webkit-transition: all .5s ease;
+		   -moz-transition: all .5s ease;
+		    -ms-transition: all .5s ease;
+		     -o-transition: all .5s ease;
+		        transition: all .5s ease;
+			&.curr{
+				-webkit-transform: rotate(90deg);
+				   -moz-transform: rotate(90deg);
+				    -ms-transform: rotate(90deg);
+				     -o-transform: rotate(90deg);
+				        transform: rotate(90deg);
+			}
+		}
+	}
+	.icon-help{
+		position: absolute;
+		top: 12px;
+		left: 16px;
+		font-size: 30px;
 	}
 }
-.cp-setting-list.cp-about-list{
-	>.item-hide{ display: block;}
+.cp-help-list .item-hide{ background: #fff; display: none;
+			p{ line-height: 24px; color: #333; font-size: 14px;}
+}
+.cp-about-list{
+	>.item-hide{ display: block;
+				p{ line-height: 24px; color: #333; font-size: 14px;}
+	}
 }
 
 // password-change
@@ -52,12 +77,103 @@
 		.dd-cp-list-item .tabs{
 			.tab-item{ overflow: visible; position: relative;}
 		}
+		.cp-list-tabs .col-25 {
+			position: relative;
+			.badge{ position: absolute; top: 4px; right: 10px;}
+			i{ background: transparent;}
+		}
+		.scrollBox2 .bd li{ width: 25%;}
 		&:first-child{ margin-bottom: 0;}
 		margin-top: 10px;
 		.item { padding-right: 38px;
 				i:first-child{
 				font-size: 24px; color: #ff8885;
 				+ .item-note.fl{ color: #000;}
+			}
+		}
+	}
+}
+
+// user-my-dd
+.cp-user-dingdan-hd{
+	border-bottom: .5px solid #ccc;
+	.col{
+		font-size: 14px;
+		&.on{ color: $red; border-bottom: 1px solid $red;}
+	}
+}
+// cp-user-my-dingdan-con
+.cp-user-my-dingdan-con{
+	.item.item-icon-right{
+		padding-right: 45px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		.item-note{ color: $red;}
+		.item-dingdan-left{
+			position: absolute;
+			left: 10px;
+			top: 6px;
+			font-size: 14px;
+			width: 60%;
+			overflow: hidden;
+			text-overflow:ellipsis;
+			white-space:nowrap;
+		}
+		.icon.icon-icon-arrow-bottom{
+			-webkit-transition: all .5s ease;
+			   -moz-transition: all .5s ease;
+			    -ms-transition: all .5s ease;
+			     -o-transition: all .5s ease;
+			        transition: all .5s ease;
+			&.curr{
+				-webkit-transform: rotate(180deg);
+				   -moz-transform: rotate(180deg);
+				    -ms-transform: rotate(180deg);
+				     -o-transform: rotate(180deg);
+				        transform: rotate(180deg);
+			}
+		}
+	}
+	.cp-user-dingdan-bd{
+		.con{ overflow: hidden; display: none;}
+		.con .list{ padding-top: 10px; margin-bottom: 0;
+			.item-hide{ display: none; margin-top: 1px;
+				.button-small.cp-button-pay{padding: 2px 15px 1px; font-size: 14px;}
+				.item-hide-box{margin-top: -2px;}
+				.title-hidden{ padding-top: 5px;}
+				.item-thumbnail-left{ padding-left: 100px; padding-right: 75px; white-space: normal; line-height: 1.5; padding-top: 18px; color: #333;
+					&:last-child{border-bottom: 0;}
+				}
+			}
+		}
+		.dingdan-price{position: absolute; top: 21px; right: 10px;
+			.dingdan-price-rmb{ color: #333; font-size: 14px;
+				&::before{
+					content: '￥';
+					color: #333;
+				}
+			}
+			.dingdan-price-num{ color: #fff; font-size: 14px; background: #f9a436; @include border-radius(10px);text-align: center; max-width: 40px; margin-left: auto;
+				&::before{
+					content: 'x';
+					color: #fff;
+				}
+			}
+		}
+		.dingdan-togal{
+			font-size: 14px;
+			color: #333;
+			background: #fff;
+			.dingdan-sl{
+				margin-right: 5px;
+				.dd-num{ margin: 0 3px;}
+			}
+			.dingdan-hj{
+				.dd-price{ color: $red;
+					&::before{
+						content: '￥';
+					}
+				}
 			}
 		}
 	}

@@ -13,26 +13,28 @@
 <body>
 	
 	<!-- header -->
-	<div class="cp-bar-header bar-assertive item-input-inset">
+	<div class="cp-bar-header bar-table">
 		<button class="button button-clear icon-icon-left"></button>
-		<label class="item-input-wrapper">
-			<input class="searchInput" type="text" placeholder="输入商户名搜索">
-			<i class="icon icon-search cp-icon-search"></i>
-		</label>
-		<button class="button button-clear" style="text-indent: -9999px;">搜索</button>
+		<h1 class="cp-title">充值</h1>
 	</div>
 	<!-- content -->
-	<script type="text/javascript" src="../sea-modules/jquery.min.js"></script>
-	<script src="../sea-modules/echo.js"></script>
-	<script type="text/javascript" src="../sea-modules/iscroll.min.js"></script>
-	<script type="text/javascript">
-		// echo.init({
-		// 	offset: 100,
-		// 	throttle: 100,
-		// 	unload: false
-		// });
-		// myScroll = new IScroll('#wrapper2', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false, click: true, tap: true });
-	</script>
+
+	<div class="cp-include-con">
+		<div class="list padding-v">
+		  <label class="item item-input nobort">
+		    <span class="input-label">充值账户</span>
+		    <input type="text" value="156****6601" readonly="readonly">
+		  </label>
+		  <label class="item item-input">
+		    <span class="input-label">金额(元):</span>
+		    <input type="text" placeholder="请输入充值金额">
+		  </label>
+		  <div class="padding mart">
+		  	<button class="button button-block button-assertive">确定</button>
+		  </div>
+		</div>
+	</div>
+ 	
 	<script src="../sea-modules/sea.js"></script>
 	<script type="text/javascript" src="../static/scripts/config.js"></script>
 	<script>

@@ -4,6 +4,12 @@ body { background: #f7f7f7; }
 
 .nomar { margin: 0 !important; }
 
+.mart { margin-top: 10px; }
+
+.noborb { border-bottom: none !important; }
+
+.nobort { border-top: none !important; }
+
 .padding-vertical { padding: 40px 0; }
 
 .padding-v { padding: 10px 0; }
@@ -25,6 +31,14 @@ body { background: #f7f7f7; }
 .red { color: #d13926 !important; }
 
 .white { color: #fff !important; }
+
+.wrapper { position: absolute; z-index: 1; top: 44px; bottom: 0; left: 0; width: 100%; overflow: hidden; }
+
+.scroller { position: absolute; z-index: 1; -webkit-tap-highlight-color: transparent; width: 100%; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none; }
+
+input[readonly]:not(.cloned-text-input) { background-color: #fff; }
+
+.red-circle { background: #d13926; display: inline-block; vertical-align: top; width: 8px; height: 8px; border-radius: 50%; }
 
 .cp-price { color: #d13926; font-size: 18px; border-top: 1px solid #e7e7e7; line-height: 30px; margin-bottom: 0; }
 
@@ -48,7 +62,7 @@ body { background: #f7f7f7; }
 .bar-assertive .button { color: #fff; }
 .bar-assertive .searchInput { width: 100%; }
 
-.bar-table { border-color: #b9b9b9; border-bottom: 1px solid #b9b9b9; background-color: #ececec; color: #000; display: flex; }
+.bar-table { border-color: #b9b9b9; border-bottom: .5px solid #b9b9b9; background-color: #ececec; color: #000; display: flex; }
 
 .cp-bar-header { position: fixed; top: 0; z-index: 9999; width: 100%; padding: 5px; height: 44px; overflow: hidden; }
 
@@ -56,13 +70,13 @@ body { background: #f7f7f7; }
 
 .cp-bar-header .button { z-index: 1; padding: 0 8px; min-width: initial; min-height: 31px; font-weight: 400; font-size: 18px; line-height: 32px; }
 
-.cp-bar-header .button:last-child { position: absolute; top: 5px; right: 5px; bottom: 5px; }
+.cp-bar-header .button.icon-icon-setting:last-child { position: absolute; top: 5px; right: 5px; bottom: 5px; }
 
 .cp-bar-header .button.button-clear { padding-right: 2px; padding-left: 2px; font-weight: 300; }
 
-.cp-con { margin-bottom: 49px; }
+.cp-con { padding-bottom: 49px; }
 
-.cp-include-con { margin-top: 44px; overflow: hidden; }
+.cp-include-con { padding-top: 44px; overflow: hidden; }
 
 /*top */
 .cp-gotop { width: 50px; height: 50px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; position: fixed; bottom: -100px; right: 20px; text-align: center; color: #d4362a; border: 1px solid #e7e7e7; padding-top: 25px; z-index: 99; background: #fff url(../images/gotop.png) center 8px no-repeat; -webkit-background-size: 20px 20px; background-size: 20px 20px; }
@@ -124,5 +138,13 @@ body { background: #f7f7f7; }
 .bar-table .icon-icon-left { color: #000; }
 
 .icon.icon-icon-success { font-size: 20px; color: #549800; position: relative; top: 3px; }
+
+.sweet-alert .sa-error-container .icon { font-size: inherit; }
+
+.item-input-wrapper ~ .button { margin-left: 5px; }
+
+.cp-badge { right: 0; font-size: 12px; width: 18px; height: 18px; line-height: 18px; }
+
+.button .cp-badge-table { background: #fff; color: #d13926; top: -3px; position: absolute; right: -3px; font-size: 12px; padding: 1px 5px; }
 
 /*# sourceMappingURL=comm.css.map */
