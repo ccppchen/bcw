@@ -4,7 +4,15 @@
 .wrapper-right{
 	left: 100px;
 	background: #fff;
+	width: calc(100% - 100px);
 }
 .wrapper-left-tabBar li{text-align: center;height:60px;line-height:60px;border-bottom:.5px solid #bfbfbf;border-right:.5px solid #bfbfbf;background-color:#f7f7f7;font-size:14px;}
 .wrapper-left-tabBar li.current{ background-color: #fff;border-right:.5px solid #fff; color: $red;}
-.wrapper-left-tabBar,.tabContent{ height: 100%; list-style: none;}
+
+.wrapper-right-tabCon-hd{ line-height:40px; padding: 5px 0 5px 45%; color:#d13926; background-color: #f7f7f7; margin-bottom: 10px;
+	img{ display: inline-block; width: 40px; height:40px; position: absolute; left: calc(45% - 40px);}
+}
+.wrapper-right-tabCon-bd .cp-price .icon.icon-icon-shop{ color: $red;}
+.wrapper.wrapper-right .tabCon{ display: none;}
+
+.wrapper-right-tabContent{ height: 100%; overflow: hidden;}

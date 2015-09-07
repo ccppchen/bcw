@@ -6,7 +6,7 @@ define(function(require, exports, module) {
 		// searchInput
 		function backSearch(){
 			var clientHeight = $('.item-input-wrapper').width();
-			var right = (clientHeight - 15);  
+			var right = (clientHeight - 15);
 			$('.icon-search.cp-icon-search').css({'left': right + 'px' });
 			$('.searchInput').css('padding-left', '5px');
 		}
@@ -43,7 +43,7 @@ define(function(require, exports, module) {
 		Huitab(".cp-user-dingdan-hd li",".cp-user-dingdan-bd .con","on","tap","0");
 
 		// classify.html
-		Huitab(".wrapper-left-tabBar li",".wrapper-right-tabContent .tabCon","current","tap","0");
+		
 		// 折叠
 		function Huifold(obj,obj_c,speed,obj_type,Event){
 			if(obj_type == 2){

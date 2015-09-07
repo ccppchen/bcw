@@ -24,7 +24,7 @@ body { background: $bg; }
 input[readonly]:not(.cloned-text-input){ background-color: #fff;}
 .red-circle{ background: $red; display: inline-block; vertical-align: top; width: 8px; height: 8px; border-radius: 50%;}
 .cp-price { color: $red; font-size: 18px; border-top: 1px solid #e7e7e7; line-height: 30px; margin-bottom: 0; }
-.cp-price .rmb { font-size: 12px; }
+.cp-price .rmb { font-size: 14px; }
 .cp-price {
 	.fr { color: #999; font-size: 14px; }
 	.icon{ font-size: 22px; margin-left: 10px; line-height: 30px; color: #999;

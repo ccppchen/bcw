@@ -444,11 +444,12 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 /* 多图滚动 */
 .scrollBox2 .bd ul { overflow: hidden; margin-bottom: 10px; }
 
-.scrollBox2 .bd li { width: 50%; float: left; font-size: 14px; padding: 0 8px; background: #fff; }
+.scrollBox2 .bd li { width: 50%; float: left; font-size: 14px; padding: 0 4px 0 8px; margin-bottom: 10px; background: #fff; }
+.scrollBox2 .bd li:nth-child(2n) { padding: 0 8px 0 4px; }
 
 .scrollBox2 .bd li a { display: block; position: relative; }
 
-.scrollBox2 .bd li a img { max-height: 190px; }
+.scrollBox2 .bd li a img { height: auto; }
 
 .scrollBox2 .bd li p.text-hidden2 { text-align: left; font-size: 12px; color: #666; line-height: 18px; }
 
@@ -459,8 +460,6 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 .scrollBox2 .hd li { display: inline-block; width: 10px; height: 10px; background: #fff; margin: 0 5px; vertical-align: middle; overflow: hidden; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; text-indent: -8888em; border: 1px solid #d13926; }
 
 .scrollBox2 .hd .on { background: #d13926; }
-
-.cp-scroll-box .scrollBox2 .bd li { margin-bottom: 10px; }
 
 .cp-increat .row .col { overflow: hidden; }
 .cp-increat .row .col img { height: 138px; }
@@ -474,13 +473,13 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 
 .tabBar li { float: left; width: 72px; height: 62px; }
 
-.tabBar li .icon { display: block; width: 100%; height: 35px; }
+.tabBar li .icon { display: block; width: 100%; height: 45px; line-height: 45px; }
 
-.wrapper2 { position: relative; z-index: 1; margin-bottom: 10px; margin-top: 10px; height: 72px; width: 100%; background: #fff; overflow: hidden; -ms-touch-action: none; }
+.wrapper2 { position: relative; z-index: 1; margin-bottom: 10px; margin-top: 10px; height: 72px; width: 100%; overflow: hidden; -ms-touch-action: none; }
 
 .scroller2 { position: absolute; z-index: 1; -webkit-tap-highlight-color: transparent; width: 360px; height: 72px; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none; }
 
-.scroller2 li { width: 72px; height: 62px; float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; background-color: #fff; font-size: 14px; overflow: hidden; text-align: center; }
+.scroller2 li { width: 72px; height: 72px; float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; background-color: #fff; font-size: 14px; overflow: hidden; text-align: center; }
 
 .scroller2 li:last-child { border-right: none; }
 
@@ -488,7 +487,7 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 
 .scroller2 .tabBar.nomar li { height: 50px; line-height: 50px; }
 
-.cp-scroll-box .scrollBox2 .bd li .cp-hot { position: absolute; top: 1px; right: 1px; width: 28px; height: 28px; }
+.scrollBox2 .bd li .cp-hot { position: absolute; top: 1px; right: 1px; width: 28px; height: 28px; }
 
 .cp-search-error { text-align: center; padding-top: 20px; padding-bottom: 10px; color: #666; line-height: 24px; }
 
@@ -580,12 +579,19 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 
 .wrapper-left { width: 100px; }
 
-.wrapper-right { left: 100px; background: #fff; }
+.wrapper-right { left: 100px; background: #fff; width: calc(100% - 100px); }
 
 .wrapper-left-tabBar li { text-align: center; height: 60px; line-height: 60px; border-bottom: .5px solid #bfbfbf; border-right: .5px solid #bfbfbf; background-color: #f7f7f7; font-size: 14px; }
 
 .wrapper-left-tabBar li.current { background-color: #fff; border-right: .5px solid #fff; color: #d13926; }
 
-.wrapper-left-tabBar, .tabContent { height: 100%; list-style: none; }
+.wrapper-right-tabCon-hd { line-height: 40px; padding: 5px 0 5px 45%; color: #d13926; background-color: #f7f7f7; margin-bottom: 10px; }
+.wrapper-right-tabCon-hd img { display: inline-block; width: 40px; height: 40px; position: absolute; left: calc(45% - 40px); }
+
+.wrapper-right-tabCon-bd .cp-price .icon.icon-icon-shop { color: #d13926; }
+
+.wrapper.wrapper-right .tabCon { display: none; }
+
+.wrapper-right-tabContent { height: 100%; overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */

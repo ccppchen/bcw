@@ -17,9 +17,9 @@ $bg: #f7f7f7; $red: #d13926; $borcolor: #ececec;
 
 /* 多图滚动 */
 .scrollBox2 .bd ul { overflow: hidden; margin-bottom: 10px; }
-.scrollBox2 .bd li { width: 50%; float: left; font-size: 14px; padding: 0 8px; background: #fff; }
+.scrollBox2 .bd li { width: 50%; float: left; font-size: 14px; padding: 0 4px 0 8px; margin-bottom: 10px; background: #fff; &:nth-child(2n){  padding: 0 8px 0 4px;} }
 .scrollBox2 .bd li a { display: block; position: relative; }
-.scrollBox2 .bd li a img{ max-height:190px;}
+.scrollBox2 .bd li a img{ height: auto;}// max-height:190px;
 .scrollBox2 .bd li p.text-hidden2 { text-align: left; font-size: 12px; color: #666; line-height: 18px; }
 // .scrollBox2 .bd li img { background: url(../images/loading.gif) center center no-repeat; }
 .scrollBox2 .hd { height: 30px; line-height: 30px; padding: 0 5px; margin: 8px 0; overflow: hidden; font-size: 18px; }
@@ -27,7 +27,8 @@ $bg: #f7f7f7; $red: #d13926; $borcolor: #ececec;
 .scrollBox2 .hd li { display: inline-block; width: 10px; height: 10px; background: #fff; margin: 0 5px; vertical-align: middle; overflow: hidden; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; text-indent: -8888em; border: 1px solid $red; }
 .scrollBox2 .hd .on { background: $red; }
 
-.cp-scroll-box .scrollBox2 .bd li{ margin-bottom: 10px;}
+// .cp-scroll-box .scrollBox2 .bd li{ margin-bottom: 10px; &:nth-child(2n){ margin-left: -8px;}}
+// .cp-scroll-box #scrollBox3.scrollBox2 .bd li:nth-child(2n),.cp-scroll-box #scrollBox2.scrollBox2 .bd li:nth-child(2n){ padding-right: 0;}
 // cp-increat
 .cp-increat .row .col { overflow: hidden;
 	img { height: 138px; }
@@ -40,9 +41,9 @@ $bg: #f7f7f7; $red: #d13926; $borcolor: #ececec;
 }
 .tabBar { @include pie-clearfix(); }
 .tabBar li { float: left; width: 72px; height: 62px; }
-.tabBar li .icon{ display: block; width: 100%; height: 35px;}
-.wrapper2 { position: relative; z-index: 1; margin-bottom: 10px; margin-top: 10px; height: 72px; width: 100%; background: #fff; overflow: hidden; -ms-touch-action: none; }
+.tabBar li .icon{ display: block; width: 100%; height: 45px; line-height: 45px;}
+.wrapper2 { position: relative; z-index: 1; margin-bottom: 10px; margin-top: 10px; height: 72px; width: 100%; overflow: hidden; -ms-touch-action: none; }
 .scroller2 { position: absolute; z-index: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 360px; height: 72px; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none; }
-.scroller2 li { width: 72px; height: 62px; float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; background-color: #fff; font-size: 14px; overflow: hidden; text-align: center; }
+.scroller2 li { width: 72px; height: 72px; float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; background-color: #fff; font-size: 14px; overflow: hidden; text-align: center; }
 .scroller2 li:last-child{ border-right:none;}
 .scroller2 li.current{ border-bottom: 3px solid $red; color: $red;}
