@@ -587,20 +587,23 @@
 		  </a>
 		</div>
 	</div>
-	<script type="text/javascript" src="../sea-modules/echo.js"></script>
-	<script type="text/javascript">
-		// 延迟加载图片
-		echo.init({
-			offset: 100,
-			throttle: 100,
-			unload: false
-		});
-	</script>
 	<script type="text/javascript" src="../sea-modules/jquery.min.js"></script>
 	<script src="../sea-modules/sea.js"></script>
 	<script src="../static/scripts/config.js"></script>
 	<script>
-		seajs.use(["../static/scripts/main", "../sea-modules/TouchSlide.1.1", "../sea-modules/iscroll.min"], function(){
+		seajs.use(["../static/scripts/main", "../sea-modules/TouchSlide.1.1", "../sea-modules/iscroll.min", "../sea-modules/echo"], function(){
+			function echoInit(){
+				// 延迟加载图片
+				echo.init({
+					offset: 100,
+					throttle: 100,
+					unload: false
+				});
+			};
+			echoInit();
+			$('.tabBar li').on('tap', function(){
+				echoInit();
+			})
 			// 轮播
 			TouchSlide({ 
 				slideCell:"#slideBox1",

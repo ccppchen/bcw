@@ -13,24 +13,37 @@
 <body>
 	
 	<!-- header -->
-	<div class="cp-bar-header bar-table">
+	<div class="cp-bar-header bar-assertive">
 		<button class="button button-clear icon-icon-left"></button>
-		<h1 class="cp-title">百草味登录</h1>
+		<h1 class="cp-title">购物车(<span>13</span>)</h1>
+		<button class="button button-clear pull-right">清空</button>
 	</div>
 	<!-- content -->
-	<div class="padding cp-login-box cp-include-con">
-		<div class="red icon icon-error cp-error">用户名或密码不正确</div>
-		<div class="cp-input-group">
-			<div class="item-input">
-				<input type="text" placeholder="手机号">
-			</div>
-			<div class="item-input">
-				<input type="password" placeholder="密码">
-			</div>
+
+	<div class="cp-include-con cp-con">
+		
+	</div>
+	 <!-- footer -->
+	<div class="cp-bar-footer">
+		<div class="tabs tabs-icon-top">
+		  <a class="tab-item" href="index.html">
+		    <i class="icon icon-icon-home"></i>
+		    首页
+		  </a>
+		  <a class="tab-item" href="user.html">
+		    <i class="icon icon-icon-user"></i>
+		    个人中心
+		  </a>
+		  <a class="tab-item current" href="account.html">
+		    <i class="icon icon-icon-shop"></i>
+		    购物车
+		    <i class="badge">12</i>
+		  </a>
+		  <a class="tab-item" href="sort.html">
+		    <i class="icon icon-icon-list"></i>
+		    分类
+		  </a>
 		</div>
-		<button class="button button-block button-assertive">登录</button>
-		<button class="button button-block button-assertive button-outline">立即注册</button>
-		<p class="text-right cp-p-color">忘记密码？</p>
 	</div>
  	
 	<script src="../sea-modules/sea.js"></script>

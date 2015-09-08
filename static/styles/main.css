@@ -419,9 +419,35 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 
 /* HiDPI support */
 @media (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { .icheckbox_minimal-red, .iradio_minimal-red { background-image: url(../images/red@2x.png); -webkit-background-size: 200px 20px; background-size: 200px 20px; } }
+/* iCheck plugin Square skin, red
+----------------------------------- */
+.icheckbox_square-red, .iradio_square-red { display: inline-block; *display: inline; vertical-align: middle; margin: 0; padding: 0; width: 22px; height: 22px; background: url(../images/squarered.png) no-repeat; border: none; cursor: pointer; }
+
+.icheckbox_square-red { background-position: 0 0; }
+
+.icheckbox_square-red.hover { background-position: -24px 0; }
+
+.icheckbox_square-red.checked { background-position: -48px 0; }
+
+.icheckbox_square-red.disabled { background-position: -72px 0; cursor: default; }
+
+.icheckbox_square-red.checked.disabled { background-position: -96px 0; }
+
+.iradio_square-red { background-position: -120px 0; }
+
+.iradio_square-red.hover { background-position: -144px 0; }
+
+.iradio_square-red.checked { background-position: -168px 0; }
+
+.iradio_square-red.disabled { background-position: -192px 0; cursor: default; }
+
+.iradio_square-red.checked.disabled { background-position: -216px 0; }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { .icheckbox_square-red, .iradio_square-red { background-image: url(../images/squarered@2x.png); -webkit-background-size: 240px 24px; background-size: 240px 24px; } }
 .cp-logo { background: url(../images/logo.png) no-repeat center center; background-size: 67px 33px; }
 
-.cp-search { width: 42px; background: url(../images/search.png) no-repeat center 7px !important; background-size: 21px 21px !important; }
+.cp-search { width: 42px; background: url(../images/icon-search-white.svg) no-repeat center 7px !important; background-size: 21px 21px !important; }
 
 .content { margin-top: 44px; margin-bottom: 49px; }
 
@@ -593,5 +619,37 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 .wrapper.wrapper-right .tabCon { display: none; }
 
 .wrapper-right-tabContent { height: 100%; overflow: hidden; }
+
+.cp-collect-shop .item .collect-price::before { content: '￥'; }
+.cp-collect-shop .item .collect-trash { position: absolute; left: 106px; bottom: 10px; font-size: 25px; }
+.cp-collect-shop .item .collect-shop { position: absolute; right: 16px; bottom: 10px; font-size: 25px; color: #fff; background: #d13926; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; padding: 5px; }
+
+.cp-address { position: absolute; top: 50%; width: 100%; margin-top: -95px; }
+.cp-address .icon-icon-address { font-size: 115px; color: #ccc; margin-bottom: 10px; }
+.cp-address p { color: #666; }
+.cp-address .button { padding: 0 25px; min-height: 36px; line-height: 36px; }
+
+.address-create .input-label { width: 30%; }
+
+.wrapper-manage .address-list { margin-bottom: 10px; }
+.wrapper-manage .address-list .item { padding-left: 11px; padding-right: 11px; }
+.wrapper-manage .address-list .item p { color: #333; line-height: 18px; }
+.wrapper-manage .address-list .item .icon-small { font-size: 14px; color: #666; font-weight: normal; font-style: normal; }
+.wrapper-manage .address-list .item .icon-small .icon-small-icon { margin-left: 8px; }
+.wrapper-manage .address-list .item .icon { font-size: 16px; }
+
+.address-manage-button { line-height: 36px; min-height: 38px; }
+
+.address-manage-padding { padding: 6px 10px; background: #f7f7f7; }
+
+.address-manage-modal fieldset { display: none; }
+.address-manage-modal h2 { margin: 0; padding: 0; margin-top: 10px; font-size: 20px; color: #333; }
+
+.cp-assess .icon-icon-success { font-size: 66px; color: #549800; }
+
+.cp-assessing textarea { border: 1px solid #ccc; width: 100%; padding: 5px; -webkit-appearance: none; }
+.cp-assessing .cp-assessing-list-box .scrollBox2 .bd li { width: 25%; margin-bottom: 5px; }
+.cp-assessing .cp-assessing-list-box .cp-assessing-list-hd { font-size: 12px; color: #333; }
+.cp-assessing .cp-assessing-list-box .cp-assessing-list-hd .clearfix { padding-left: 8px; padding-right: 8px; }
 
 /*# sourceMappingURL=main.css.map */

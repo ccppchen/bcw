@@ -1,0 +1,74 @@
+.cp-address{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -95px;
+	.icon-icon-address{
+		font-size: 115px;
+		color: #ccc;
+		margin-bottom: 10px;
+	}
+	p{
+		color: #666;
+	}
+	.button{
+		padding: 0 25px;
+		min-height: 36px;
+		line-height: 36px;
+	}
+
+}
+
+// 新建地址
+.address-create{
+	.input-label{
+		width: 30%;
+	}
+}
+.wrapper-manage{
+	.address-list{
+		margin-bottom: 10px;
+		.item{
+			padding-left: 11px;
+			padding-right: 11px;
+			p{
+				color: #333;
+				line-height: 18px;
+			}
+			.icon-small{
+				font-size: 14px;
+				color: #666;
+				font-weight: normal;
+				font-style: normal;
+				.icon-small-icon{
+					margin-left: 8px;
+				}
+			}
+			.icon{
+				font-size: 16px;
+			}
+		}
+	}
+}
+.address-manage-button{
+	line-height: 36px;
+	min-height: 38px;
+}
+.address-manage-padding{
+	padding: 6px 10px;
+	background: $bg;
+}
+
+// address-manage-modal
+.address-manage-modal{
+	fieldset{
+		display: none;
+	}
+	h2{
+		margin: 0;
+		padding: 0;
+		margin-top: 10px;
+		font-size: 20px;
+		color: #333;
+	}
+}

@@ -1,0 +1,26 @@
+.cp-assess{
+	.icon-icon-success{
+		font-size: 66px;
+		color: #549800;
+
+	}
+}
+.cp-assessing{
+	textarea{
+		border: 1px solid #ccc;
+		width: 100%;
+		padding: 5px;
+		-webkit-appearance: none;
+	}
+	.cp-assessing-list-box{
+		.scrollBox2 .bd li{
+			width: 25%;
+			margin-bottom: 5px;
+		}
+		.cp-assessing-list-hd{
+			font-size: 12px;
+			color: #333;
+			.clearfix{ padding-left: 8px; padding-right: 8px;}
+		}
+	}
+}

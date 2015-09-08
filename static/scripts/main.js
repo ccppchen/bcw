@@ -105,7 +105,7 @@ define(function(require, exports, module) {
 				})
 
 				var timmer = null;
-				$(window).bind("scroll",function() {
+				$(window).bind("scroll scrollEnd",function() {
 		            var d = $(document).scrollTop(),
 		            e = $(window).height();
 		            e < d ? $backTop.css("bottom", "100px") : $backTop.css("bottom", "-100px");

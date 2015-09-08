@@ -3,8 +3,10 @@ define(function(require){
 
 	require('icheck');
 
+	require('tappy');
+
 	// radio checkbox
-	$('input').iCheck({ 
+	$('.cp-radio input:radio').iCheck({ 
 	  labelHover : false, 
 	  cursor : true, 
 	  checkboxClass : 'icheckbox_minimal-red', 
@@ -12,4 +14,16 @@ define(function(require){
 	  increaseArea : '20%' 
 	});
 
+	// radio checkbox
+	$('.address-list input').iCheck({ 
+	  labelHover : false, 
+	  cursor : true, 
+	  checkboxClass : 'icheckbox_square-red', 
+	  radioClass : 'iradio_square-red', 
+	  increaseArea : '20%' 
+	});
+
+	// $('.address-list .item input').on('tap', function(){
+	// 	$(this).iCheck('check');
+	// });
 });

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body { background: #f7f7f7; }
 
 .nopadding { padding: 0 !important; }
@@ -32,6 +33,8 @@ body { background: #f7f7f7; }
 
 .white { color: #fff !important; }
 
+.whitebg { background: #fff !important; }
+
 .wrapper { position: absolute; z-index: 1; top: 44px; bottom: 0; left: 0; width: 100%; overflow: hidden; }
 
 .scroller { position: absolute; z-index: 1; -webkit-tap-highlight-color: transparent; width: 100%; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none; }
@@ -53,7 +56,7 @@ input[readonly]:not(.cloned-text-input) { background-color: #fff; }
 
 .text-hidden1 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
 
-.text-hidden2 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.text-hidden2 { overflow: hidden; text-overflow: ellipsis; white-space: normal !important; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 
 .span-red { width: 5px; height: 18px; display: inline-block; background: #d13926; margin: 6px 6px 6px 0; }
 
@@ -68,9 +71,11 @@ input[readonly]:not(.cloned-text-input) { background-color: #fff; }
 
 .cp-title { position: absolute; top: 0; right: 0; left: 0; z-index: 0; overflow: hidden; margin: 0 10px; min-width: 30px; height: 43px; text-align: center; text-overflow: ellipsis; white-space: nowrap; font-size: 17px; font-weight: 500; line-height: 44px; }
 
+.cp-title.title-icon-right { position: static; width: calc(100% - 60px); }
+
 .cp-bar-header .button { z-index: 1; padding: 0 8px; min-width: initial; min-height: 31px; font-weight: 400; font-size: 18px; line-height: 32px; }
 
-.cp-bar-header .button.icon-icon-setting:last-child { position: absolute; top: 5px; right: 5px; bottom: 5px; }
+.cp-bar-header .button:last-child { position: absolute; top: 5px; right: 5px; bottom: 5px; }
 
 .cp-bar-header .button.button-clear { padding-right: 2px; padding-left: 2px; font-weight: 300; }
 
@@ -98,7 +103,7 @@ input[readonly]:not(.cloned-text-input) { background-color: #fff; }
 .cp-bar-header .item-input-wrapper { background: #fff; margin-left: 10px; position: relative; }
 .cp-bar-header .item-input-wrapper input { padding: 5px 5px 5px 34px; }
 
-.cp-icon-search { position: absolute; left: 5px; width: 29px; height: 29px; text-align: center; line-height: 29px; background: url(../images/search2.png) center center no-repeat; background-size: 20px 20px; }
+.cp-icon-search { position: absolute; left: 5px; width: 29px; height: 29px; text-align: center; line-height: 29px; background: url(../images/icon-search-black.svg) center center no-repeat; background-size: 20px 20px; }
 
 .icon { display: inline-block; font-size: 30px; margin: 0 auto; height: 30px; }
 
@@ -146,5 +151,11 @@ input[readonly]:not(.cloned-text-input) { background-color: #fff; }
 .cp-badge { right: 0; font-size: 12px; width: 18px; height: 18px; line-height: 18px; }
 
 .button .cp-badge-table { background: #fff; color: #d13926; top: -3px; position: absolute; right: -3px; font-size: 12px; padding: 1px 5px; }
+
+.account-box { position: fixed; bottom: 69px; left: 20px; width: 60px; height: 60px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background: #fff; padding: 5px; }
+.account-box .accountbox-con { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background: #d13926; color: #fff; width: 50px; height: 50px; line-height: 50px; text-align: center; overflow: hidden; }
+.account-box .accountbox-con .account-price { font-size: 14px; }
+.account-box .accountbox-con .account-price::before { content: '¥'; font-size: 12px; }
+.account-box .account-price-badge { position: absolute; top: 0; left: 0; width: 25px; height: 25px; line-height: 25px; text-align: center; font-size: 12px; background: rgba(0, 0, 0, 0.8); -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
 
 /*# sourceMappingURL=comm.css.map */

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../static/styles/ionic.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles/comm.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles/main.css">
+</head>
+<!--  onload="myscroll()" -->
+<body>
+	
+	<!-- header -->
+	<div class="cp-bar-header bar-assertive">
+		<button class="button button-clear icon-icon-left"></button>
+		<h1 class="cp-title">管理收货地址</h1>
+	</div>
+	<!-- content -->
+	<!--  id="wrapper-manage" -->
+	<div class="wrapper-manage cp-include-con cp-con">
+		<div class="address-box">
+			<ul class="list address-list">
+				<li class="item item-icon-left item-icon-right">
+					<b class="icon">王大头</b>
+					<b class="icon">13957198384</b>
+				</li>
+				<li class="item text-left">
+					<p class="text-hidden2">浙江省杭州市西湖区留下街道紫金花路2号联合大厦A座1单元601</p>
+				</li>
+				<li class="item item-icon-left item-icon-right">
+					<label class="icon icon-small">
+						<input type="radio" name="address" checked>
+						&nbsp;默认收货地址1
+					</label>
+					<span class="icon icon-small">
+						<div class="icon-small-icon"><i class="icon-icon-edite"></i>
+						编辑</div>
+
+						<div class="icon-small-icon remove"><i class="icon-icon-trash"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></i>
+						删除</div>
+					</span>
+				</li>
+			</ul>
+			<ul class="list address-list">
+				<li class="item item-icon-left item-icon-right">
+					<b class="icon">王大头</b>
+					<b class="icon">13957198384</b>
+				</li>
+				<li class="item text-left">
+					<p class="text-hidden2">浙江省杭州市西湖区留下街道紫金花路2号联合大厦A座1单元601</p>
+				</li>
+				<li class="item item-icon-left item-icon-right">
+					<label class="icon icon-small">
+						<input type="radio" name="address">
+						&nbsp;默认收货地址2
+					</label>
+					<span class="icon icon-small">
+						<div class="icon-small-icon"><i class="icon-icon-edite"></i>
+						编辑</div>
+
+						<div class="icon-small-icon remove"><i class="icon-icon-trash"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></i>
+						删除</div>
+					</span>
+				</li>
+			</ul>
+			<ul class="list address-list">
+				<li class="item item-icon-left item-icon-right">
+					<b class="icon">王大头</b>
+					<b class="icon">13957198384</b>
+				</li>
+				<li class="item text-left">
+					<p class="text-hidden2">浙江省杭州市西湖区留下街道紫金花路2号联合大厦A座1单元601</p>
+				</li>
+				<li class="item item-icon-left item-icon-right">
+					<label class="icon icon-small">
+						<input type="radio" name="address">
+						&nbsp;默认收货地址3
+					</label>
+					<span class="icon icon-small">
+						<div class="icon-small-icon"><i class="icon-icon-edite"></i>
+						编辑</div>
+
+						<div class="icon-small-icon remove"><i class="icon-icon-trash"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></i>
+						删除</div>
+					</span>
+				</li>
+			</ul>
+			<ul class="list address-list">
+				<li class="item item-icon-left item-icon-right">
+					<b class="icon">王大头</b>
+					<b class="icon">13957198384</b>
+				</li>
+				<li class="item text-left">
+					<p class="text-hidden2">浙江省杭州市西湖区留下街道紫金花路2号联合大厦A座1单元601</p>
+				</li>
+				<li class="item item-icon-left item-icon-right">
+					<label class="icon icon-small">
+						<input type="radio" name="address">
+						&nbsp;默认收货地址4
+					</label>
+					<span class="icon icon-small">
+						<div class="icon-small-icon"><i class="icon-icon-edite"></i>
+						编辑</div>
+
+						<div class="icon-small-icon remove"><i class="icon-icon-trash"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></i>
+						删除</div>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- bar footer -->
+	<div class="cp-bar-footer address-manage-padding">
+		<button class="button button-block button-assertive nomar address-manage-button">
+			<span class="icon-icon-create" style=" font-size: 25px; vertical-align: middle;"></span>
+			新建收货地址
+		</button>
+	</div>
+
+	<script type="text/javascript" src="../sea-modules/jquery.min.js"></script>
+	<script type="text/javascript" src="../sea-modules/sea.js"></script>
+	<script type="text/javascript" src="../static/scripts/config.js"></script>
+	<script type="text/javascript">
+		seajs.use(['../sea-modules/sweetalert.min', '../static/scripts/input'], function(){
+			$('.address-list .remove').on('tap', function(){
+				var parAddress = $(this).parents('.address-list').index();
+				swal({
+					title: "确定删除吗？",
+					showCancelButton: true,
+					confirmButtonText: "确定",
+					cancelButtonText: "取消",
+					closeOnConfirm: false,
+					closeOnCancel: true,
+					customClass: 'address-manage-modal',
+					allowOutsideClick: true
+				}, function(){
+					$('.address-box .address-list').eq(parAddress).remove();
+					swal("删除成功!", "", "success");
+				});
+			});
+		});
+	</script>
+</body>
+</html>
