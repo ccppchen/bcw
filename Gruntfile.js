@@ -32,7 +32,10 @@ module.exports = function(grunt) {
          },
          dist: {
              files: {
-                 'scripts/iscroll.min.js': 'scripts/iscroll.js'
+                 'dist/static/scripts/config.js': 'static/scripts/config.js',
+                 'dist/static/scripts/input.js': 'static/scripts/input.js',
+                 'dist/static/scripts/main.js': 'static/scripts/main.js',
+                 'dist/static/scripts/user.js': 'static/scripts/user.js',
              }
          }
      	},
@@ -63,8 +66,8 @@ module.exports = function(grunt) {
             files: [{
             	expand: true,
             	cwd: 'images',
-            	src: ['static/*.{png,jpg,jpeg,gif,webp,svg}'],
-            	dest: 'dist/images'
+            	src: ['static/images/*.{png,jpg,jpeg,gif,webp,svg}'],
+            	dest: 'dist/static/images'
             }]
           }
         },
@@ -86,8 +89,8 @@ module.exports = function(grunt) {
             files: [{
             	expand: true,
             	cwd: 'html',
-            	src: ['*.html'],
-            	dest: 'dist'
+            	src: ['app/*.html'],
+            	dest: 'dist/app'
             }]
           }
         }
@@ -103,8 +106,8 @@ module.exports = function(grunt) {
   	grunt.loadNpmTasks('grunt-contrib-imagemin');
   	grunt.loadNpmTasks('grunt-contrib-htmlmin');
  
-    // 自定义任务
+    // 自定义任务 'cssmin',·
     grunt.registerTask('live', ['watch']);
-    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'imagemin']);
+    grunt.registerTask('default', ['htmlmin', 'uglify', 'cssmin', 'imagemin']);
  
 };

@@ -17,7 +17,7 @@ javascripts_dir = "scripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
-output_style = :compact
+output_style = :compressed
 
 #压缩比例
 # output_style = (environment == :development) ? :expanded : :compressed
