@@ -4,20 +4,24 @@
 			content: '￥';
 		}
 		.collect-trash{
+			font-size: 25px;
+		}
+		.icon-left{
 			position: absolute;
 			left: 106px;
 			bottom: 10px;
-			font-size: 25px;
 		}
 		.collect-shop{
-			position: absolute;
-			right: 16px;
-			bottom: 10px;
 			font-size: 25px;
 			color: #fff;
 			background: $red;
 			@include border-radius(50%);
 			padding: 5px;
+		}
+		.icon-right{
+			position: absolute;
+			right: 16px;
+			bottom: 10px;
 		}
 	}
 }

@@ -1,0 +1,118 @@
+.pay-breadcrumb{
+	border-bottom: .5px solid #d8d8d8;
+	// padding: 5px 0;
+	.col{
+		position: relative;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			right: 0;
+			width: 16px;
+			height: 32px;
+			background: url(../images/icon-arrow-right.svg) no-repeat;
+		}
+		&:last-child::after {
+			content: '';
+			background: none;
+		}
+	}
+}
+.admin-address{
+	border-image: url(../images/br.png) 30 0 30 0 round; 
+	border-top-width: 5px;
+	border-bottom-width: 5px;
+	background: #fff;
+	.admin-address-name{
+		padding-bottom: 10px;
+		.name{
+			margin-right: 10px;
+		}
+	}
+	.address-con{
+		line-height: 20px;
+	}
+	.item{
+		border-width: 0;
+	}
+}
+.pay-wap{
+	.item{
+		.col{
+			text-align: center;
+			margin-top: 5px;
+			position: relative;
+			&.curr{
+				border: 1px solid $red;
+				&::after {
+					content: '';
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					background: url(../images/check-right.png) no-repeat;
+					background-size: 13px 13px;
+					width: 13px;
+					height: 13px;
+				}
+			}
+		}
+	}
+}
+.dingdan-info{
+	.item .row{
+		.col{
+			text-align: left;
+			font-size: 14px;
+			padding-left: 0;
+			margin-top: 0;
+		}
+	}
+}
+.pay-dingdan-list .dingdan-price-rmb::before{
+	color: $red!important;
+}
+.pay-dingdan-list .cp-user-dingdan-bd .item-hide-box .item{ 
+	padding-left: 100px; padding-right: 75px; white-space: normal; line-height: 1.5; padding-top: 18px; color: #333;border-bottom: 1px dashed #bfbfbf;
+}
+
+.pay-remark{
+	.item{
+		font-size: 14px;
+		input,.remark-btn-yhq{ display: inline-block;}
+		input{
+			width: 98px;
+			border: 1px solid #ccc;
+			padding: 3px;
+			height: 30px;
+			margin-left: 5px;
+			border-radius: 0;
+			-webkit-appearance: none;
+		}
+		.remark-btn-yhq{
+			padding: 8px 6px;
+			background: #f9a436;
+			color: #fff;
+		}
+		textarea{
+			display: inline-block;
+			border: 1px solid #ccc;
+			background: #eeeeee;
+			border-radius: 0;
+			-webkit-appearance: none;
+			width: 100%;
+			padding: 5px;
+		}
+	}
+}
+
+.cp-pay-bottom{
+	border-top: .5px solid #d8d8d8;
+	.col.col-33{
+		line-height: 49px; background: #d13926; color: #fff;
+		i{position: absolute; top: 15px; color: #fff;}
+	}
+}
+

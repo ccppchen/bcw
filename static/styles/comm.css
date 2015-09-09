@@ -19,6 +19,8 @@ body { background: #f7f7f7; }
 
 .padding { padding: 10px; }
 
+.nopaddingb { padding-bottom: 0 !important; }
+
 .circle { border-radius: 50%; }
 
 .text-center { text-align: center; }
@@ -35,9 +37,13 @@ body { background: #f7f7f7; }
 
 .whitebg { background: #fff !important; }
 
+.price::before { content: '￥'; font-size: 12px; }
+
 .wrapper { position: absolute; z-index: 1; top: 44px; bottom: 0; left: 0; width: 100%; overflow: hidden; }
 
 .scroller { position: absolute; z-index: 1; -webkit-tap-highlight-color: transparent; width: 100%; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none; }
+
+.wrapper-bottom { bottom: 98px; }
 
 input[readonly]:not(.cloned-text-input) { background-color: #fff; }
 
@@ -91,7 +97,7 @@ input[readonly]:not(.cloned-text-input) { background-color: #fff; }
 .cp-list-tabs .col-25 i { width: 46px; height: 46px; background: #d13926; display: block; margin: 0 auto 8px; }
 
 /*cp-bar-footer*/
-.cp-bar-footer { position: fixed; bottom: 0; width: 100%; height: 49px; z-index: 9999; }
+.cp-bar-footer { position: fixed; bottom: 0; width: 100%; height: 49px; z-index: 9999; background: #f7f7f7; }
 .cp-bar-footer .tab-item .badge { right: calc(50% - 76px); }
 
 .cp-bar-footer .tabs-icon-top.tabs .tab-item { font-size: 14px; line-height: 7px; }
@@ -157,5 +163,19 @@ input[readonly]:not(.cloned-text-input) { background-color: #fff; }
 .account-box .accountbox-con .account-price { font-size: 14px; }
 .account-box .accountbox-con .account-price::before { content: '¥'; font-size: 12px; }
 .account-box .account-price-badge { position: absolute; top: 0; left: 0; width: 25px; height: 25px; line-height: 25px; text-align: center; font-size: 12px; background: rgba(0, 0, 0, 0.8); -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+
+.mui-numbox { position: relative; display: inline-block; overflow: hidden; width: 120px; height: 30px; padding: 0 35px 0 35px; vertical-align: top; vertical-align: middle; border: solid 1px #bbb; border-radius: 3px; background-color: #efeff4; }
+
+.mui-numbox [class*=mui-numbox-btn] { font-size: 18px; font-weight: normal; line-height: 100%; position: absolute; top: 0; overflow: hidden; width: 35px; height: 100%; padding: 0; color: #555; border: none; border-radius: 0; background-color: #f9f9f9; }
+
+.mui-numbox [class*=mui-numbox-btn]:active { background-color: #ccc; }
+
+.mui-numbox [class*=mui-numbox-btn][disabled] { color: #c0c0c0; }
+
+.mui-numbox .mui-numbox-btn-plus { right: 0; border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+
+.mui-numbox .mui-numbox-btn-minus { left: 0; border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+
+.mui-numbox .mui-numbox-input { display: inline-block; overflow: hidden; width: 100%; height: 100%; margin: 0; padding: 0 3px !important; text-align: center !important; text-overflow: ellipsis; word-break: normal; border: none !important; border-right: solid 1px #ccc !important; border-left: solid 1px #ccc !important; border-radius: 0 !important; }
 
 /*# sourceMappingURL=comm.css.map */

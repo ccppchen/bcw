@@ -78,9 +78,8 @@
 			.tab-item{ overflow: visible; position: relative;}
 		}
 		.cp-list-tabs .col-25 {
-			position: relative;
-			.badge{ position: absolute; top: 4px; right: 10px;}
-			i{ background: transparent;}
+			.badge{ position: absolute; top: -6px; right: -6px;}
+			i{ background: transparent;position: relative;}
 		}
 		.scrollBox2 .bd li{ width: 25%;}
 		&:first-child{ margin-bottom: 0;}

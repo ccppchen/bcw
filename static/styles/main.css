@@ -552,9 +552,8 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 
 .cp-user-my-dingdan .list { margin-top: 10px; }
 .cp-user-my-dingdan .list .dd-cp-list-item .tabs .tab-item { overflow: visible; position: relative; }
-.cp-user-my-dingdan .list .cp-list-tabs .col-25 { position: relative; }
-.cp-user-my-dingdan .list .cp-list-tabs .col-25 .badge { position: absolute; top: 4px; right: 10px; }
-.cp-user-my-dingdan .list .cp-list-tabs .col-25 i { background: transparent; }
+.cp-user-my-dingdan .list .cp-list-tabs .col-25 .badge { position: absolute; top: -6px; right: -6px; }
+.cp-user-my-dingdan .list .cp-list-tabs .col-25 i { background: transparent; position: relative; }
 .cp-user-my-dingdan .list .scrollBox2 .bd li { width: 25%; }
 .cp-user-my-dingdan .list:first-child { margin-bottom: 0; }
 .cp-user-my-dingdan .list .item { padding-right: 38px; }
@@ -621,8 +620,10 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 .wrapper-right-tabContent { height: 100%; overflow: hidden; }
 
 .cp-collect-shop .item .collect-price::before { content: '￥'; }
-.cp-collect-shop .item .collect-trash { position: absolute; left: 106px; bottom: 10px; font-size: 25px; }
-.cp-collect-shop .item .collect-shop { position: absolute; right: 16px; bottom: 10px; font-size: 25px; color: #fff; background: #d13926; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; padding: 5px; }
+.cp-collect-shop .item .collect-trash { font-size: 25px; }
+.cp-collect-shop .item .icon-left { position: absolute; left: 106px; bottom: 10px; }
+.cp-collect-shop .item .collect-shop { font-size: 25px; color: #fff; background: #d13926; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; padding: 5px; }
+.cp-collect-shop .item .icon-right { position: absolute; right: 16px; bottom: 10px; }
 
 .cp-address { position: absolute; top: 50%; width: 100%; margin-top: -95px; }
 .cp-address .icon-icon-address { font-size: 115px; color: #ccc; margin-bottom: 10px; }
@@ -651,5 +652,51 @@ body.stop-scrolling { height: 100%; overflow: hidden; }
 .cp-assessing .cp-assessing-list-box .scrollBox2 .bd li { width: 25%; margin-bottom: 5px; }
 .cp-assessing .cp-assessing-list-box .cp-assessing-list-hd { font-size: 12px; color: #333; }
 .cp-assessing .cp-assessing-list-box .cp-assessing-list-hd .clearfix { padding-left: 8px; padding-right: 8px; }
+
+.cp-shopping-car { padding-bottom: 98px; }
+.cp-shopping-car .cp-collect-shop-box a.item-thumbnail-left { padding-left: 140px; min-height: 125px; padding-top: 10px; }
+.cp-shopping-car .cp-collect-shop-box a.item-thumbnail-left .shop-car { position: absolute; left: 10px; top: 50%; margin-top: -11px; }
+.cp-shopping-car .cp-collect-shop-box a.item-thumbnail-left .total { position: absolute; left: 40px; bottom: 3px; font-size: 14px; }
+.cp-shopping-car .cp-collect-shop-box a.item-thumbnail-left > img:first-child { left: 40px; max-width: 90px; max-height: 90px; }
+.cp-shopping-car .cp-collect-shop-box .item .icon-left { left: 140px; bottom: 23px; }
+.cp-shopping-car .cp-collect-shop-box .item .icon-right { bottom: 23px; }
+
+.cp-shopping-car-account-box { position: fixed; bottom: 49px; height: 49px; z-index: 2; overflow: hidden; background: rgba(0, 0, 0, 0.8); color: #fff; font-size: 14px; }
+.cp-shopping-car-account-box .col-60 { -webkit-box-flex: 0; -webkit-flex: 0 0 60%; -moz-box-flex: 0; -moz-flex: 0 0 60%; -ms-flex: 0 0 60%; flex: 0 0 60%; max-width: 60%; }
+.cp-shopping-car-account-box .col-40 { -webkit-box-flex: 0; -webkit-flex: 0 0 40%; -moz-box-flex: 0; -moz-flex: 0 0 40%; -ms-flex: 0 0 40%; flex: 0 0 40%; max-width: 40%; }
+.cp-shopping-car-account-box .col-25 { line-height: 49px; padding: 0 0 0 10px; }
+.cp-shopping-car-account-box .col-75 .col { float: left; height: 49px; }
+.cp-shopping-car-account-box .col-75 .col.go-account { background: #d13926; line-height: 49px; text-align: center; color: #fff; }
+
+.pay-breadcrumb { border-bottom: .5px solid #d8d8d8; }
+.pay-breadcrumb .col { position: relative; padding-top: 8px; padding-bottom: 8px; }
+.pay-breadcrumb .col::after { content: ''; position: absolute; z-index: 2; top: 0; right: 0; width: 16px; height: 32px; background: url(../images/icon-arrow-right.svg) no-repeat; }
+.pay-breadcrumb .col:last-child::after { content: ''; background: none; }
+
+.admin-address { border-image: url(../images/br.png) 30 0 30 0 round; border-top-width: 5px; border-bottom-width: 5px; background: #fff; }
+.admin-address .admin-address-name { padding-bottom: 10px; }
+.admin-address .admin-address-name .name { margin-right: 10px; }
+.admin-address .address-con { line-height: 20px; }
+.admin-address .item { border-width: 0; }
+
+.pay-wap .item .col { text-align: center; margin-top: 5px; position: relative; }
+.pay-wap .item .col.curr { border: 1px solid #d13926; }
+.pay-wap .item .col.curr::after { content: ''; position: absolute; right: 0; bottom: 0; background: url(../images/check-right.png) no-repeat; background-size: 13px 13px; width: 13px; height: 13px; }
+
+.dingdan-info .item .row .col { text-align: left; font-size: 14px; padding-left: 0; margin-top: 0; }
+
+.pay-dingdan-list .dingdan-price-rmb::before { color: #d13926 !important; }
+
+.pay-dingdan-list .cp-user-dingdan-bd .item-hide-box .item { padding-left: 100px; padding-right: 75px; white-space: normal; line-height: 1.5; padding-top: 18px; color: #333; border-bottom: 1px dashed #bfbfbf; }
+
+.pay-remark .item { font-size: 14px; }
+.pay-remark .item input, .pay-remark .item .remark-btn-yhq { display: inline-block; }
+.pay-remark .item input { width: 98px; border: 1px solid #ccc; padding: 3px; height: 30px; margin-left: 5px; border-radius: 0; -webkit-appearance: none; }
+.pay-remark .item .remark-btn-yhq { padding: 8px 6px; background: #f9a436; color: #fff; }
+.pay-remark .item textarea { display: inline-block; border: 1px solid #ccc; background: #eeeeee; border-radius: 0; -webkit-appearance: none; width: 100%; padding: 5px; }
+
+.cp-pay-bottom { border-top: .5px solid #d8d8d8; }
+.cp-pay-bottom .col.col-33 { line-height: 49px; background: #d13926; color: #fff; }
+.cp-pay-bottom .col.col-33 i { position: absolute; top: 15px; color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

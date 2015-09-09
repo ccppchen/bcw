@@ -10,18 +10,143 @@
 	<link rel="stylesheet" type="text/css" href="../static/styles/comm.css">
 	<link rel="stylesheet" type="text/css" href="../static/styles/main.css">
 </head>
+<!--  onload="loaded()" -->
 <body>
 	
 	<!-- header -->
 	<div class="cp-bar-header bar-assertive">
 		<button class="button button-clear icon-icon-left"></button>
 		<h1 class="cp-title">购物车(<span>13</span>)</h1>
-		<button class="button button-clear pull-right">清空</button>
+		<button class="button button-clear pull-right" id="emptyShopCar">清空</button>
 	</div>
 	<!-- content -->
 
-	<div class="cp-include-con cp-con">
-		
+	<div class="cp-shopping-car cp-include-con">
+		<div class="list cp-collect-shop cp-collect-shop-box">
+			
+		    <a class="item item-thumbnail-left shop-car-list" href="javascript:;">
+		      <img src="../static/images/items.png">
+		      <h2 class="text-hidden2">【百草味_夏威夷果】零食坚果澳洲原产奶油味218g/袋</h2>
+		      <p class="collect-price">32.90</p>
+		      <div class="shopping-num-box icon-left">
+				<div class="mui-numbox">
+					<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+					<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+					<input class="mui-numbox-input text-center" type="text" value="0" min="1" max="9" name="quantity" readonly>
+				</div>
+		      </div>
+		      <div class="collect-trash icon-icon-trash icon-right">
+				<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span>
+			  </div>
+			  <div class="shop-car">
+			  	<input type="checkbox" name="ware">
+			  </div>
+			  <div class="red total">小计：<span>598.54</span></div>
+			  
+		    </a>
+
+		    <a class="item item-thumbnail-left shop-car-list" href="javascript:;">
+		      <img src="../static/images/items.png">
+		      <h2 class="text-hidden2">【百草味_夏威夷果】零食坚果澳洲原产奶油味218g/袋</h2>
+		      <p class="collect-price">32.90</p>
+		      <div class="shopping-num-box icon-left">
+				<div class="mui-numbox">
+					<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+					<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+					<input class="mui-numbox-input text-center" type="text" value="0" min="1" max="9" name="quantity" readonly>
+				</div>
+		      </div>
+		      <div class="collect-trash icon-icon-trash icon-right">
+				<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span>
+			  </div>
+			  <div class="shop-car">
+			  	<input type="checkbox" name="ware">
+			  </div>
+			  <div class="red total">小计：<span>598.54</span></div>
+			  
+		    </a>
+
+		    <a class="item item-thumbnail-left shop-car-list" href="javascript:;">
+		      <img src="../static/images/items.png">
+		      <h2 class="text-hidden2">【百草味_夏威夷果】零食坚果澳洲原产奶油味218g/袋</h2>
+		      <p class="collect-price">32.90</p>
+		      <div class="shopping-num-box icon-left">
+				<div class="mui-numbox">
+					<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+					<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+					<input class="mui-numbox-input text-center" type="text" value="0" min="1" max="9" name="quantity" readonly>
+				</div>
+		      </div>
+		      <div class="collect-trash icon-icon-trash icon-right">
+				<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span>
+			  </div>
+			  <div class="shop-car">
+			  	<input type="checkbox" name="ware">
+			  </div>
+			  <div class="red total">小计：<span>598.54</span></div>
+			  
+		    </a>
+
+		    <a class="item item-thumbnail-left shop-car-list" href="javascript:;">
+		      <img src="../static/images/items.png">
+		      <h2 class="text-hidden2">【百草味_夏威夷果】零食坚果澳洲原产奶油味218g/袋</h2>
+		      <p class="collect-price">32.90</p>
+		      <div class="shopping-num-box icon-left">
+				<div class="mui-numbox">
+					<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+					<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+					<input class="mui-numbox-input text-center" type="text" value="0" min="1" max="9" name="quantity" readonly>
+				</div>
+		      </div>
+		      <div class="collect-trash icon-icon-trash icon-right">
+				<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span>
+			  </div>
+			  <div class="shop-car">
+			  	<input type="checkbox" name="ware">
+			  </div>
+			  <div class="red total">小计：<span>598.54</span></div>
+			  
+		    </a>
+
+		    <a class="item item-thumbnail-left shop-car-list" href="javascript:;">
+		      <img src="../static/images/items.png">
+		      <h2 class="text-hidden2">【百草味_夏威夷果】零食坚果澳洲原产奶油味218g/袋</h2>
+		      <p class="collect-price">32.90</p>
+		      <div class="shopping-num-box icon-left">
+				<div class="mui-numbox">
+					<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+					<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+					<input class="mui-numbox-input text-center" type="text" value="0" min="1" max="9" name="quantity" readonly>
+				</div>
+		      </div>
+		      <div class="collect-trash icon-icon-trash icon-right">
+				<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span>
+			  </div>
+			  <div class="shop-car">
+			  	<input type="checkbox" name="ware">
+			  </div>
+			  <div class="red total">小计：<span>598.54</span></div>
+			  
+		    </a>
+
+		</div>
+	</div>
+	
+	<!-- 合计 -->
+	<div class="cp-shopping-car-account-box row nopadding">
+		<div class="col col-25">
+			<input type="checkbox" name="account" id="account">
+			全选
+		</div>
+		<div class="col col-75 nopadding">
+			<div class="col col-60 padding text-right">
+				<div>合计：<span class="price">13441.48</span></div>
+				<div>还差15元包邮</div>
+			</div>
+			<div class="col col-40 nopadding go-account">
+				去结算（<span>6</span>）
+			</div>
+		</div>
 	</div>
 	 <!-- footer -->
 	<div class="cp-bar-footer">
@@ -45,11 +170,117 @@
 		  </a>
 		</div>
 	</div>
- 	
-	<script src="../sea-modules/sea.js"></script>
+	<script type="text/javascript" src="../sea-modules/jquery.min.js"></script>
+  	<script type="text/javascript" src="../sea-modules/iscroll.min.js"></script>
+  	<script type="text/javascript" src="../sea-modules/icheck.min.js"></script>
+  	<script type="text/javascript" src="../sea-modules/sweetalert.min.js"></script>
+  	<script type="text/javascript" src="../sea-modules/tappy.js"></script>
+ 	<script type="text/javascript">
+ 		// function loaded(){
+ 		// 	myscroll1 = new IScroll("#wrapper-left",{hScrollbar:false, vScrollbar:false, tap: true, click: true, mouseWheel: true});
+ 		// }
+ 		$(function(){
+
+ 			// ,
+ 			$('.mui-numbox-btn-minus').on('tap', function(){
+ 				var inputObj = $(this).siblings('input');
+ 				var numVal = inputObj.val();
+ 				if(numVal > 0){
+ 					$(this).siblings('.mui-numbox-btn-plus').removeAttr('disabled');
+ 					numVal--;
+ 					inputObj.val(numVal);
+ 				}else{
+ 					$(this).attr('disabled', 'disabled');
+ 				}
+ 			});
+ 			$('.mui-numbox-btn-plus').on('tap', function(){
+ 				var inputObj = $(this).siblings('input');
+ 				var numVal = inputObj.val();
+ 				var maxNumVal = inputObj.attr('max');
+ 				if (numVal == maxNumVal) {
+ 					numVal == maxNumVal;
+ 					$(this).attr('disabled', 'disabled');
+ 				}else{
+ 					$(this).siblings('.mui-numbox-btn-minus').removeAttr('disabled');
+ 					numVal++;
+ 					inputObj.val(numVal);
+ 				}
+ 			});
+
+			$('input').iCheck({ 
+			  labelHover : false, 
+			  cursor : true,
+			  // 去掉hover
+			  hoverClass: 'hover1',
+			  checkboxClass : 'iradio_square-red', 
+			  radioClass : 'iradio_square-red', 
+			  increaseArea : '20%' 
+			});
+			// $('.cp-shopping-car-account-box input').iCheck('check');
+			$('.shop-car input').on('ifUnchecked', function(){
+				$(this).iCheck('uncheck');
+			});
+			$('#account').on('ifChecked', function(event){
+				$('.shop-car input').iCheck('check');
+			});
+			$('#account').on('ifUnchecked', function(event){
+				$('.shop-car input').iCheck('uncheck');
+			});
+
+			// shopping-car清空购物车
+			$('#emptyShopCar').on('tap', function(){
+				swal({
+					title: "是否要清空购物车？",
+					showCancelButton: true,
+					confirmButtonText: "好",
+					cancelButtonText: "不，谢谢",
+					closeOnConfirm: false,
+					closeOnCancel: true,
+					customClass: 'address-manage-modal',
+					allowOutsideClick: true
+				}, function(){
+					var all = $('.cp-shopping-car .list').find('.shop-car-list');
+					// console.log(all.length);
+					if(all.length > 0){
+						all.remove();
+						swal({
+							title: "删除成功!",
+							type: "success",
+							timer: 1000,
+							customClass: 'nopaddingb',
+							showConfirmButton: false
+						});
+					}else{
+						swal({
+							title: "购物车为空",
+							timer: 1000,
+							type: "warning",
+							customClass: 'nopaddingb',
+							showConfirmButton: false
+						});
+					}
+				});
+			});
+
+			// 点击垃圾桶删掉商品
+			$('.shop-car-list .icon-icon-trash').on('tap', function(){
+				$(this).parent('.shop-car-list').remove();
+				// alert(shopCarIndex);
+				swal({
+					title: "删除成功",
+					type: "success",
+					timer: 1000,
+					customClass: 'nopaddingb',
+					showConfirmButton: false
+				});
+			});
+
+ 		})
+ 	</script>
+<!-- 	<script src="../sea-modules/sea.js"></script>
 	<script type="text/javascript" src="../static/scripts/config.js"></script>
 	<script>
 		seajs.use("../static/scripts/main");
-	</script>
+	</script> -->
 </body>
 </html>

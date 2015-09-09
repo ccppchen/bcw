@@ -1,0 +1,59 @@
+.cp-shopping-car{
+	padding-bottom: 98px;
+	.cp-collect-shop-box{
+		a.item-thumbnail-left{
+			padding-left: 140px;
+			min-height: 125px;
+			padding-top: 10px;
+			.shop-car{
+				position: absolute;
+				left: 10px;
+				top: 50%;
+				margin-top: -11px;
+			}
+			.total{
+				position: absolute;
+				left: 40px;
+				bottom: 3px;
+				font-size: 14px;
+			}
+		}
+		a.item-thumbnail-left>img:first-child{
+			left: 40px;
+			max-width: 90px;
+			max-height: 90px;
+		}
+		.item .icon-left{
+			left: 140px;
+			bottom: 23px;
+		}
+		.item .icon-right{
+			bottom: 23px;
+		}
+	}
+}
+.cp-shopping-car-account-box{
+	position: fixed;
+	bottom: 49px;
+	height: 49px;
+	z-index: 2;
+	overflow: hidden;
+	background: rgba(#000,.8);
+	color: #fff;
+	font-size: 14px;
+	.col-60{-webkit-box-flex:0;-webkit-flex:0 0 60%;-moz-box-flex:0;-moz-flex:0 0 60%;-ms-flex:0 0 60%;flex:0 0 60%;max-width:60%}
+	.col-40{-webkit-box-flex:0;-webkit-flex:0 0 40%;-moz-box-flex:0;-moz-flex:0 0 40%;-ms-flex:0 0 40%;flex:0 0 40%;max-width:40%}
+	.col-25{line-height: 49px; padding: 0 0 0 10px;}
+	.col-75{
+		.col{
+			float: left;
+			height: 49px;
+			&.go-account{
+				background: $red;
+				line-height: 49px;
+				text-align: center;
+				color: #fff;
+			}
+		}
+	}
+}
