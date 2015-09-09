@@ -22,6 +22,8 @@
 		<button class="button button-clear" style="text-indent: -9999px;"></button>
 	</div>
 	<!-- content -->
+
+
 	<div class="wrapper" id="wrapper-con">
 		<div class="scroller">
 
@@ -53,15 +55,15 @@
 			<div class="store-con-box">
 				<div class="store-con-hd row padding-h">
 					<div class="col text-center">
-						<div class="time">19:00场</div>
+						<div class="time">7:00场</div>
 						<div class="status">已结束</div>
 					</div>
 					<div class="col text-center curr">
-						<div class="time">20:00场</div>
+						<div class="time">9:00场</div>
 						<div class="status">疯抢中</div>
 					</div>
 					<div class="col text-center">
-						<div class="time">21:00场</div>
+						<div class="time">10:00场</div>
 						<div class="status">即将开始</div>
 					</div>
 				</div>
@@ -83,7 +85,7 @@
 
 				<div class="night-eight red-line">
 					<div class="night-eight-hd">
-						晚市8折
+						早市8折
 					</div>
 					<div class="store-con-bd list">
 
@@ -128,7 +130,7 @@
 
 				<div class="night-eight red-line">
 					<div class="night-eight-hd">
-						晚市9折
+						早市9折
 					</div>
 					<div class="store-con-bd list">
 
@@ -173,7 +175,7 @@
 
 				<div class="night-eight red-line">
 					<div class="night-eight-hd">
-						晚市9.5折
+						早市9.5折
 					</div>
 					<div class="store-con-bd list">
 
@@ -220,7 +222,9 @@
 		</div>
 	</div>
 
-<!-- gouwuche -->
+	
+
+	<!-- gouwuche -->
 	<div class="account-box">
 		<div class="accountbox-con">
 			<i class="account-price">10.90</i>
@@ -231,14 +235,14 @@
 	<script type="text/javascript" src="../sea-modules/IScroll.js"></script>
 	<script type="text/javascript" src="../sea-modules/tappy.js"></script>
 	<script type="text/javascript">
-		var $backTop = this.$backTop = $('<div class="cp-gotop">顶部</div>');
 		function updatePosition(){
 			var positionY = this.y;
 			var e = $(window).height();
-			e < -positionY ? $backTop.css("bottom", "100px") : $('.cp-gotop').css("bottom", "-100px");
+			e < -positionY ? $('.cp-gotop').css("bottom", "100px") : $('.cp-gotop').css("bottom", "-100px");
 
 		}
 		function iscrollTop(){
+			var $backTop = this.$backTop = $('<div class="cp-gotop">顶部</div>');
 			$('body').append($backTop);
 
 			var wrapperCon = new IScroll("#wrapper-con",{hScrollbar:false, probeType: 3, vScrollbar:false, tap: true,mouseWheel: true});

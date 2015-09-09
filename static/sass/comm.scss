@@ -114,7 +114,7 @@ position: relative; }
 .cp-badge { right: 0; font-size: 12px; width: 18px; height: 18px; line-height: 18px; }
 .button .cp-badge-table { background: #fff; color: $red; top: -3px; position: absolute; right: -3px; font-size: 12px; padding: 1px 5px; }
 // 购物车固定左下角样式
-.account-box { position: fixed; bottom: 69px; left: 20px; width: 60px; height: 60px; @include border-radius(50%); background: #fff; padding: 5px;
+.account-box { position: fixed; z-index: 99; bottom: 69px; left: 20px; width: 60px; height: 60px; @include border-radius(50%); background: #fff; padding: 5px;
     .accountbox-con { @include border-radius(50%); background: $red; color: #fff; width: 50px; height: 50px; line-height: 50px; text-align: center; overflow: hidden;
         .account-price { font-size: 14px;
             &::before { content: '¥'; font-size: 12px; }

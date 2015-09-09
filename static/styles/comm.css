@@ -158,7 +158,7 @@ input[readonly]:not(.cloned-text-input) { background-color: #fff; }
 
 .button .cp-badge-table { background: #fff; color: #d13926; top: -3px; position: absolute; right: -3px; font-size: 12px; padding: 1px 5px; }
 
-.account-box { position: fixed; bottom: 69px; left: 20px; width: 60px; height: 60px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background: #fff; padding: 5px; }
+.account-box { position: fixed; z-index: 99; bottom: 69px; left: 20px; width: 60px; height: 60px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background: #fff; padding: 5px; }
 .account-box .accountbox-con { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background: #d13926; color: #fff; width: 50px; height: 50px; line-height: 50px; text-align: center; overflow: hidden; }
 .account-box .accountbox-con .account-price { font-size: 14px; }
 .account-box .accountbox-con .account-price::before { content: '¥'; font-size: 12px; }

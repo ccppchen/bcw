@@ -2,11 +2,11 @@
 seajs.config({
 	base: "../sea-modules/",
 	alias: {
-	  "jquery": "jquery.min.js",
-	  "iscroll": "iscroll.min.js",
-	  "TouchSlide": "TouchSlide.1.1.js",
-	  "sweetalert": "sweetalert.min.js",
-	  "icheck": "icheck.min.js",
+	  "jquery": "jquery.js",
+	  "IScroll": "IScroll.js",
+	  "TouchSlide": "TouchSlide.js",
+	  "sweetalert": "sweetalert.js",
+	  "icheck": "icheck.js",
 	  "tappy": "tappy"
 	},
 	preload: ['jquery'],

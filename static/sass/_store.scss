@@ -1,0 +1,188 @@
+.cp-store{
+	margin-bottom: 10px;
+	position: relative;
+	&::before{
+		content: '';
+		background:  url(../images/store-top.png) no-repeat;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 30px;
+		background-size: 100% 30px;
+	}
+	&::after{
+		content: '';
+		background:  url(../images/shopbg.png) no-repeat;
+		position: absolute;
+        left: 20px;
+        bottom: 10px;
+        width:290px;
+        height: 115px;
+        background-size: 290px 115px;
+	}
+	height: 170px;
+	background: $red;
+	width: 100%;
+	padding-top: 60px;
+	padding-left: 150px;
+	color: #fff;
+	img:first-child{
+		position: absolute;
+		left: 30px;
+		bottom: 45px;
+		width: 75px;
+		height:75px;
+		z-index: 2;
+	}
+	.cp-store-box{
+		.cp-store-title{
+			padding-right: 10px;
+			line-height: 20px;
+		}
+		.store-kc{
+			.fl .store-kc-num{
+				width: 50px;
+				height: 10px;
+				background: #fff;
+				position: relative;
+				overflow: hidden;
+				display: inline-block;
+				.store-kc-orange{
+					position: absolute;
+					left: 0;
+					top: 0;
+					height: 10px;
+					background: #ffd35e;
+				}
+			}
+			.store-qg{
+				background: #ffd35e;
+				color: #d4362a;
+				text-align: center;
+				height: 40px;
+				line-height: 40px;
+				width: 70px;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+// comm
+// 价格
+.store-box-price{
+	padding: 5px 10px 5px 0;
+	.p-price{
+		font-size: 22px;
+		&::before{
+			content: 'RMB';
+			vertical-align: super;
+			font-size: 12px;
+		}
+	}
+	.o-price{
+		font-size: 12px;
+	}
+}
+
+.store-con-box{
+	border-top: .5px solid #e8e8e8;
+	border-bottom: .5px solid #e8e8e8;
+	background: #fff;
+	.store-con-hd{
+		.time{margin-bottom: 5px; height: 20px; line-height: 20px; position: relative;}
+		.col{
+			color: #666;
+			&.curr{
+				background: $red;
+				color: #fff;
+				.time{padding-left: 14px;}
+				.time::before{
+					content: '';
+					background: url(../images/svg/img/store-time.svg) no-repeat;
+					position: absolute;
+					left: 5px;
+					top: 3px;
+					width: 16px;
+					height: 16px;
+					padding-right: 3px;
+				}
+			}
+		}
+	}
+
+	.store-con-bd{
+		.item{
+			min-height: 115px;
+			padding-top: 18px;
+			.title-hidden{
+				margin-bottom: 8px;
+			}
+			.store-con-list-time{
+				position: absolute;
+				bottom: 4px;
+				left: 10px;
+				font-size: 14px;
+				&::before{
+					content: '';
+					background: url(../images/svg/img/store-time-h.svg) no-repeat;
+					width: 16px;
+					height: 16px;
+					display: inline-block;
+					vertical-align:middle;
+					margin-right: 3px;
+				}
+			}
+		}
+		.store-box-price .o-price{
+			color: #666;
+		}
+	}
+
+	.night-eight{
+		background: transparent;
+		position: relative;
+		margin-bottom: 10px;
+		&.red-line{
+			&::before{
+				content: '';
+				position: absolute;
+                top:17px;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: $red;
+                z-index: 1;
+			}
+		}
+		.night-eight-hd{
+			position: relative;
+			z-index: 2;
+			background: $red;
+			font-size: 18px;
+			font-weight: 800;
+			width: 100px;
+			color: #fff;
+			height: 36px;
+			line-height: 36px;
+			text-align: center;
+			margin-left: 20px;
+			margin-bottom: 5px;
+			&::after{
+				content: '';
+				position: absolute;
+				right: -12px;
+				bottom: 5px;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+				border: 12px solid transparent;
+				border-top-color: #a21106;
+				@include transform(rotate(135deg));
+			}
+		}
+	}
+}

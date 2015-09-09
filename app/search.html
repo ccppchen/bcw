@@ -13,7 +13,7 @@
 <body>
 	
 	<!-- header -->
-	<div class="cp-bar-header bar-assertive item-input-inset">
+	<div class="cp-bar-header bar-assertive item-input-inset" style="position: inherit;">
 		<button class="button button-clear icon-icon-left"></button>
 		<label class="item-input-wrapper">
 			<input class="searchInput" type="text" placeholder="输入商户名搜索">
@@ -21,24 +21,27 @@
 		</label>
 		<button class="button button-clear" style="text-indent: -9999px;">搜索</button>
 	</div>
-	<div class="cp-include-con">
+	<div class="searchbox">
 	<!-- not found -->
 		<div class="cp-search-error">
 			对不起，没有找到你想要的美食，<br />不如看看其他小伙伴喜欢吃些啥？
 		</div>
 		<!-- lefLoop -->
-		<div class="wrapper2" id="wrapper2" style="height: 50px;">
+		<div class="wrapper2" style="height: 50px;">
 			<div class="scroller2">
 				<ul class="tabBar nomar">
 					<li>
 					    综合
 					</li>
-					<li>
+					<!-- <li>
 					    销量
-					</li>
+					</li> -->
 					<li>
 					    价格
 					</li>
+					<!-- <li>
+					    评论数
+					</li> -->
 					<li>
 					    评论数
 					</li>
@@ -49,287 +52,285 @@
 			</div>
 		</div>
 		<!-- content -->
-		<div class="cp-con">
-			<!-- list -->
-			<div class="barContent">
-				<div class="cp-scroll-box">
-					<div class="scrollBox2">
-						<div class="bd">
-							<ul>
-								<li>
-									
-									<a class="pic" href="#">
-										<img class="img-pons" src="../static/images/loading.gif" height="32" width="32" data-echo="../static/images/wyPic1.jpg" />
-									<!-- hot标签 -->
-										<div class="cp-hot">
-											<img src="../static/images/loading.gif" data-echo="../static/images/hot.png" height="55" width="56" alt="" class="img-pons">
-										</div>
-									</a>
-									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+		<!-- list -->
+		<div class="barContent">
+			<div class="cp-scroll-box">
+				<div class="scrollBox2">
+					<div class="bd">
+						<ul>
+							<li>
+								
+								<a class="pic" href="#">
+									<img class="img-pons" src="../static/images/loading.gif" height="32" width="32" data-echo="../static/images/wyPic1.jpg" />
+								<!-- hot标签 -->
+									<div class="cp-hot">
+										<img src="../static/images/loading.gif" data-echo="../static/images/hot.png" height="55" width="56" alt="" class="img-pons">
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
-									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+								</a>
+								<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic1.jpg" /></a>
-									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
-									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
+								<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
 									</div>
-								</li>
-								<li>
-									
-									<a class="pic" href="#">
-										<img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic1.jpg" />
-									<!-- hot标签 -->
-										<div class="cp-hot">
-											<img src="../static/images/loading.gif" data-echo="../static/images/hot.png" height="55" width="56" alt="" class="img-pons">
-										</div>
-									</a>
-									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
-									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic1.jpg" /></a>
+								<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic1.jpg" /></a>
-									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
-									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
+								<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
 									</div>
-								</li>
-								<li>
-									
-									<a class="pic" href="#">
-										<img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic1.jpg" />
-									<!-- hot标签 -->
-										<div class="cp-hot">
-											<img src="../static/images/loading.gif" data-echo="../static/images/hot.png" height="55" width="56" alt="" class="img-pons">
-										</div>
-									</a>
-									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
-									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+								</div>
+							</li>
+							<li>
+								
+								<a class="pic" href="#">
+									<img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic1.jpg" />
+								<!-- hot标签 -->
+									<div class="cp-hot">
+										<img src="../static/images/loading.gif" data-echo="../static/images/hot.png" height="55" width="56" alt="" class="img-pons">
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic1.jpg" /></a>
-									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+								</a>
+								<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
-									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
 									</div>
-								</li>
-							</ul>
-						</div>
-
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
+								<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
+									</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic1.jpg" /></a>
+								<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
+									</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
+								<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
+									</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
+									</div>
+								</div>
+							</li>
+							<li>
+								
+								<a class="pic" href="#">
+									<img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic1.jpg" />
+								<!-- hot标签 -->
+									<div class="cp-hot">
+										<img src="../static/images/loading.gif" data-echo="../static/images/hot.png" height="55" width="56" alt="" class="img-pons">
+									</div>
+								</a>
+								<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
+									</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
+								<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
+									</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic1.jpg" /></a>
+								<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
+									</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/loading.gif" data-echo="../static/images/wyPic2.jpg" /></a>
+								<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
+									</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
+
 				</div>
-				<div class="cp-scroll-box">
-					<div class="scrollBox2">
-						<div class="bd">
-							<ul>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic1.jpg" /></a>
-									<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+			</div>
+			<div class="cp-scroll-box">
+				<div class="scrollBox2">
+					<div class="bd">
+						<ul>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic1.jpg" /></a>
+								<p class="text-hidden2">李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾李玟亲赴红十字会赈灾</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic2.jpg" /></a>
-									<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
 									</div>
-								</li>
-							</ul>
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic2.jpg" /></a>
+								<p class="text-hidden2">日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访日皇太子妃10年首出访</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
+									</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
+									</div>
+								</div>
+							</li>
+						</ul>
 
-							<ul>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic3.jpg" /></a>
-									<p class="text-hidden2">武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+						<ul>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic3.jpg" /></a>
+								<p class="text-hidden2">武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本武僧一龙一拳击败日本</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic4.jpg" /></a>
-									<p class="text-hidden2">被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
 									</div>
-								</li>
-							</ul>
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic4.jpg" /></a>
+								<p class="text-hidden2">被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官被免职的雅安乡官</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
+									</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
+									</div>
+								</div>
+							</li>
+						</ul>
 
-							<ul>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic5.jpg" /></a>
-									<p class="text-hidden2">火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1-3</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+						<ul>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic5.jpg" /></a>
+								<p class="text-hidden2">火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1火箭2分险胜雷霆总分1-3</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
 									</div>
-								</li>
-								<li>
-									<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic6.jpg" /></a>
-									<p class="text-hidden2">杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相</p>
-									<div class="red cp-price clearfix">
-										<div class="fl">
-											<i class="rmb">¥</i>19.9
-										</div>
-										<div class="fr">
-											<span class="icon icon-icon-shop fr"></span>
-											<span class="icon icon-icon-heat fr"></span>
-										</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
 									</div>
-								</li>
-							</ul>
-						</div>
-
+								</div>
+							</li>
+							<li>
+								<a class="pic" href="#"><img class="img-pons" src="../static/images/wyPic6.jpg" /></a>
+								<p class="text-hidden2">杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相杨幂着透视长裙亮相</p>
+								<div class="red cp-price clearfix">
+									<div class="fl">
+										<i class="rmb">¥</i>19.9
+									</div>
+									<div class="fr">
+										<span class="icon icon-icon-shop fr"></span>
+										<span class="icon icon-icon-heat fr"></span>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -341,16 +342,19 @@
 			<span class="account-price-badge">99</span>
 		</div>
 	</div>
-	<script type="text/javascript" src="../sea-modules/jquery.min.js"></script>
+	<script type="text/javascript" src="../sea-modules/jquery.js"></script>
 	<script src="../sea-modules/echo.js"></script>
-	<script type="text/javascript" src="../sea-modules/iscroll.min.js"></script>
+	<script type="text/javascript" src="../sea-modules/IScroll.js"></script>
 	<script type="text/javascript">
-		echo.init({
-			offset: 100,
-			throttle: 100,
-			unload: false
-		});
-		myScroll = new IScroll('#wrapper2', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false, click: true, tap: true });
+		$(function(){
+			echo.init({
+				offset: 100,
+				throttle: 100,
+				unload: false
+			});
+			
+		})
+		// myScroll = new IScroll('#wrapper2', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false, click: true, tap: true });
 	</script>
 	<script src="../sea-modules/sea.js"></script>
 	<script type="text/javascript" src="../static/scripts/config.js"></script>

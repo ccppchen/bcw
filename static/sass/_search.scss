@@ -4,3 +4,8 @@
 .scrollBox2 .bd li .cp-hot{ position: absolute; top: 1px; right:1px; width: 28px; height: 28px;}
 .cp-search-error{text-align: center; padding-top: 20px; padding-bottom: 10px; color: #666; line-height: 24px;}
 
+.searchbox{
+	.scroller2{height: 52px; position: inherit; width:100%; }
+	.scroller2 .tabBar.nomar li{ width: 25%;}
+	.searchbox{position: absolute; top: 44px; width: 100%;}
+}

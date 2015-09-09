@@ -27,6 +27,7 @@ define(function(require, exports, module) {
 			$(tabCon).eq(i).show();
 			
 			$tab_menu.on(tabEvent,function(){
+				echo.init();
 				$tab_menu.removeClass(class_name);
 				$(this).addClass(class_name);
 				var index=$tab_menu.index(this);
@@ -47,7 +48,7 @@ define(function(require, exports, module) {
 		// 折叠
 		function Huifold(obj,obj_c,speed,obj_type,Event){
 			if(obj_type == 2){
-				$(obj+":first").find("b").html("-");
+				// $(obj+":first").find("b").html("-");
 				$(obj_c+":first").show();
 			}
 			$(obj).bind(Event,function(){
@@ -60,19 +61,19 @@ define(function(require, exports, module) {
 						return false;
 					}
 					else{
-						$(this).next().slideUp(speed).end().removeClass("selected");
+						$(this).next().slideUp(speed).end();
 						$(this).find("b").html("+");
 					}
 				}
 				else{
 					if(obj_type == 3){
-						$(this).next().slideDown(speed).end().addClass("selected");
+						$(this).next().slideDown(speed).end();
 						$(this).find("b").html("-");
 					}else{
 						$(obj_c).slideUp(speed);
 						$(obj).removeClass("selected");
 						$(obj).find("b").html("+");
-						$(this).next().slideDown(speed).end().addClass("selected");
+						$(this).next().slideDown(speed).end();
 						$(this).find("b").html("-");
 					}
 				}
@@ -83,7 +84,7 @@ define(function(require, exports, module) {
 		// detale.html
 		Huifold("#Huifold1 .cp-help-list .item","#Huifold1 .cp-help-list .item-hide","fast",3,"tap"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
 		// user-my-dd.html
-		Huifold(".cp-user-dd-con .list .item",".cp-user-dd-con .list .item-hide","fast",3,"tap");
+		Huifold(".cp-user-dd-con .list > .item",".cp-user-dd-con .list .item-hide","fast",3,"tap");
 
 		//javascript Document gotop
 		function chinaz(){
@@ -118,7 +119,7 @@ define(function(require, exports, module) {
 			
 		}
 		var chinaz = new chinaz();
-
+		
 		// password-chang 输入数据后按钮去掉不可点击
 		$('.cp-password-change .item-input > input').on('keyup', function(){
 			var thisInputLenght = $(this).val().length;

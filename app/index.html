@@ -587,11 +587,11 @@
 		  </a>
 		</div>
 	</div>
-	<script type="text/javascript" src="../sea-modules/jquery.min.js"></script>
+	<script type="text/javascript" src="../sea-modules/jquery.js"></script>
 	<script src="../sea-modules/sea.js"></script>
 	<script src="../static/scripts/config.js"></script>
 	<script>
-		seajs.use(["../static/scripts/main", "../sea-modules/TouchSlide.1.1", "../sea-modules/iscroll.min", "../sea-modules/echo"], function(){
+		seajs.use(["../static/scripts/main", "../sea-modules/TouchSlide", "../sea-modules/IScroll", "../sea-modules/echo"], function(){
 			function echoInit(){
 				// 延迟加载图片
 				echo.init({
@@ -601,9 +601,6 @@
 				});
 			};
 			echoInit();
-			$('.tabBar li').on('tap', function(){
-				echoInit();
-			})
 			// 轮播
 			TouchSlide({ 
 				slideCell:"#slideBox1",
