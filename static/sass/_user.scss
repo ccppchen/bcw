@@ -83,6 +83,12 @@
 
 .cp-user-my-dingdan{
 	.list{
+		.cp-scroll-box .scrollBox2 .bd ul li{ height: auto;
+			a{
+				padding: 0;
+
+			}
+		}
 		.dd-cp-list-item .tabs{
 			.tab-item{ overflow: visible; position: relative;}
 		}
@@ -156,13 +162,13 @@
 			}
 		}
 		.dingdan-price{position: absolute; top: 21px; right: 10px;
-			.dingdan-price-rmb{ color: #333; font-size: 14px;
+			.dingdan-price-rmb{ color: #333; font-size: 12px;
 				&::before{
 					content: '￥';
 					color: #333;
 				}
 			}
-			.dingdan-price-num{ color: #fff; font-size: 14px; background: #f9a436; @include border-radius(10px);text-align: center; max-width: 40px; margin-left: auto;
+			.dingdan-price-num{ color: #fff; font-size: 12px; background: #f9a436; @include border-radius(10px);text-align: center; max-width: 40px; margin-left: auto;
 				&::before{
 					content: 'x';
 					color: #fff;

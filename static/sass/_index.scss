@@ -52,11 +52,9 @@ $bg: #f7f7f7; $red: #d13926; $borcolor: #ececec;
 
 // 0910 修复
 .slideBox .cp-hd li{ background: #fff;}
-.scrollBox2 .bd li a{
-	padding: 15px!important;
-}
-.scrollBox2 .bd ul li{ border-top: 1px solid #e7e7e7!important; height: 207px!important; margin-bottom: -1px!important; border-bottom: 1px solid #e7e7e7!important;}
-.scrollBox2 .bd ul li:nth-child(n){ border-right: 1px solid #e7e7e7!important}
+.scrollBox2 .bd li a{padding: 15px;}
+.scrollBox2 .bd ul li{ border-top: 1px solid #e7e7e7!important; height: 207px; margin-bottom: -1px; border-bottom: 1px solid #e7e7e7!important;}
+.scrollBox2 .bd ul li:nth-child(n){ border-right: 1px solid #e7e7e7;}
 #scrollBox3.scrollBox2 .bd ul{ margin-bottom: 0!important;}
 .barContent .scrollBox2 .bd ul li{ margin-bottom: 10px!important;}
 .cp-scroll-box #scrollBox2 .bd{ border-bottom: 1px solid #e7e7e7!important;}
