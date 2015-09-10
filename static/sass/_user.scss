@@ -55,8 +55,17 @@
 // user-my
 .cp-user-my-box{
 	background: url(../images/user-my.png) center center no-repeat; background-size: cover;
-	.list .item{ background: transparent; border: none;
-				h2,p{ color: #fff;}
+	.list .item{ background: transparent; border: none; position: relative;
+				&::before {
+				content: '';
+				position: absolute;
+				height: 100%;
+				width: .5px;
+				background: #fff;
+				left: 0;
+				top: 0;
+			}
+			h2,p{ color: #fff;}
 	}
 	.cp-user-my-box-hd{
 		.list .item{ min-height: 80px;}
@@ -78,6 +87,7 @@
 			.tab-item{ overflow: visible; position: relative;}
 		}
 		.cp-list-tabs .col-25 {
+			font-size: 12px;
 			.badge{ position: absolute; top: -6px; right: -6px;}
 			i{ background: transparent;position: relative;}
 		}

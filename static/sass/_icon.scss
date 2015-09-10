@@ -1,15 +1,15 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?kt044e');
-	src:url('../fonts/icomoon.eot?#iefixkt044e') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?kt044e') format('truetype'),
-		url('../fonts/icomoon.woff?kt044e') format('woff'),
-		url('../fonts/icomoon.svg?kt044e#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?-ez11dz');
+	src:url('../fonts/icomoon.eot?#iefix-ez11dz') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?-ez11dz') format('truetype'),
+		url('../fonts/icomoon.woff?-ez11dz') format('woff'),
+		url('../fonts/icomoon.svg?-ez11dz#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-[class^="icon-help"],[class^="icon-"],[class*=" icon-icon"] {
+[class^="icon-help"],[class^="icon-"],[class*="icon-icon"] {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -23,171 +23,164 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-help-car .path1:before {
+.icon-icon-fj:before {
 	content: "\e600";
+}
+.icon-icon-game:before {
+	content: "\e601";
+}
+.icon-icon-sh:before {
+	content: "\e602";
+}
+.icon-icon-tea:before {
+	content: "\e603";
+}
+.icon-icon-tv:before {
+	content: "\e604";
+}
+.icon-icon-wz:before {
+	content: "\e605";
+}
+.icon-help-car .path1:before {
+	content: "\e606";
 	color: rgb(245, 183, 92);
 }
 .icon-help-car .path2:before {
-	content: "\e601";
-	margin-left: -1em;
-	color: rgb(255, 255, 255);
-}
-.icon-help-phone .path1:before {
-	content: "\e602";
-	color: rgb(202, 148, 240);
-}
-.icon-help-phone .path2:before {
-	content: "\e603";
-	margin-left: -1em;
-	color: rgb(255, 255, 255);
-}
-.icon-help-solve .path1:before {
-	content: "\e604";
-	color: rgb(141, 169, 242);
-}
-.icon-help-solve .path2:before {
-	content: "\e605";
-	margin-left: -1em;
-	color: rgb(255, 255, 255);
-}
-.icon-help-user .path1:before {
-	content: "\e606";
-	color: rgb(128, 225, 239);
-}
-.icon-help-user .path2:before {
 	content: "\e607";
 	margin-left: -1em;
 	color: rgb(255, 255, 255);
 }
-.icon-icon-about:before {
+.icon-help-phone .path1:before {
 	content: "\e608";
+	color: rgb(202, 148, 240);
 }
-.icon-icon-address:before {
+.icon-help-phone .path2:before {
 	content: "\e609";
-}
-.icon-icon-all-dingdan:before {
-	content: "\e60a";
-}
-.icon-icon-arrow-bottom:before {
-	content: "\e60b";
-}
-.icon-icon-arrow-left:before {
-	content: "\e60c";
-}
-.icon-icon-arrow-right:before {
-	content: "\e60d";
-}
-.icon-icon-arrow-top:before {
-	content: "\e60e";
-}
-.icon-icon-create:before {
-	content: "\e60f";
-}
-.icon-icon-edite:before {
-	content: "\e610";
-}
-.icon-icon-error:before {
-	content: "\e611";
-}
-.icon-icon-heat:before {
-	content: "\e612";
-}
-.icon-icon-home:before {
-	content: "\e613";
-}
-.icon-icon-left:before {
-	content: "\e614";
-}
-.icon-icon-list:before {
-	content: "\e615";
-}
-.icon-icon-money:before {
-	content: "\e616";
-}
-.icon-icon-my-account:before {
-	content: "\e617";
-}
-.icon-icon-my-empty-dd:before {
-	content: "\e618";
-}
-.icon-icon-my-love:before {
-	content: "\e619";
-}
-.icon-icon-my-star:before {
-	content: "\e61a";
-}
-.icon-icon-my-youhuiquan:before {
-	content: "\e61b";
-}
-.icon-icon-phone:before {
-	content: "\e61c";
-}
-.icon-icon-pingjia:before {
-	content: "\e61d";
-}
-.icon-icon-question:before {
-	content: "\e61e";
-}
-.icon-icon-rmb:before {
-	content: "\e61f";
-}
-.icon-icon-safe:before {
-	content: "\e620";
-}
-.icon-icon-setting:before {
-	content: "\e621";
-}
-.icon-icon-shop:before {
-	content: "\e622";
-}
-.icon-icon-shouhuo:before {
-	content: "\e623";
-}
-.icon-icon-success:before {
-	content: "\e624";
-}
-.icon-icon-trash .path1:before {
-	content: "\e625";
-	color: rgb(178, 178, 178);
-}
-.icon-icon-trash .path2:before {
-	content: "\e626";
-	margin-left: -1em;
-	color: rgb(178, 178, 178);
-}
-.icon-icon-trash .path3:before {
-	content: "\e627";
 	margin-left: -1em;
 	color: rgb(255, 255, 255);
 }
-.icon-icon-trash .path4:before {
+.icon-help-solve .path1:before {
+	content: "\e60a";
+	color: rgb(141, 169, 242);
+}
+.icon-help-solve .path2:before {
+	content: "\e60b";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.icon-help-user .path1:before {
+	content: "\e60c";
+	color: rgb(128, 225, 239);
+}
+.icon-help-user .path2:before {
+	content: "\e60d";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.icon-icon-about:before {
+	content: "\e60e";
+}
+.icon-icon-address:before {
+	content: "\e60f";
+}
+.icon-icon-all-dingdan:before {
+	content: "\e610";
+}
+.icon-icon-arrow-bottom:before {
+	content: "\e611";
+}
+.icon-icon-arrow-left:before {
+	content: "\e612";
+}
+.icon-icon-arrow-right:before {
+	content: "\e613";
+}
+.icon-icon-arrow-top:before {
+	content: "\e614";
+}
+.icon-icon-create:before {
+	content: "\e615";
+}
+.icon-icon-edite:before {
+	content: "\e616";
+}
+.icon-icon-error:before {
+	content: "\e617";
+}
+.icon-icon-heat:before {
+	content: "\e618";
+}
+.icon-icon-home:before {
+	content: "\e619";
+}
+.icon-icon-left:before {
+	content: "\e61a";
+}
+.icon-icon-list:before {
+	content: "\e61b";
+}
+.icon-icon-money:before {
+	content: "\e61c";
+}
+.icon-icon-my-account:before {
+	content: "\e61d";
+}
+.icon-icon-my-empty-dd:before {
+	content: "\e61e";
+}
+.icon-icon-my-love:before {
+	content: "\e61f";
+}
+.icon-icon-my-star:before {
+	content: "\e620";
+}
+.icon-icon-my-youhuiquan:before {
+	content: "\e621";
+}
+.icon-icon-phone:before {
+	content: "\e622";
+}
+.icon-icon-pingjia:before {
+	content: "\e623";
+}
+.icon-icon-question:before {
+	content: "\e624";
+}
+.icon-icon-rmb:before {
+	content: "\e625";
+}
+.icon-icon-safe:before {
+	content: "\e626";
+}
+.icon-icon-searcher:before {
+	content: "\e627";
+}
+.icon-icon-setting:before {
 	content: "\e628";
-	margin-left: -1em;
-	color: rgb(178, 178, 178);
 }
-.icon-icon-trash .path5:before {
+.icon-icon-shop:before {
 	content: "\e629";
-	margin-left: -1em;
-	color: rgb(178, 178, 178);
 }
-.icon-icon-trash .path6:before {
+.icon-icon-shouhuo:before {
 	content: "\e62a";
-	margin-left: -1em;
-	color: rgb(178, 178, 178);
 }
-.icon-icon-trash .path7:before {
+.icon-icon-success:before {
 	content: "\e62b";
-	margin-left: -1em;
-	color: rgb(178, 178, 178);
 }
-.icon-icon-trash .path8:before {
+.icon-icon-trash .path1:before {
 	content: "\e62c";
-	margin-left: -1em;
 	color: rgb(178, 178, 178);
 }
-.icon-icon-tv:before {
+.icon-icon-trash .path2:before {
 	content: "\e62d";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.icon-icon-trash .path3:before {
+	content: "\e62e";
+	margin-left: -1em;
+	color: rgb(178, 178, 178);
 }
 .icon-icon-user:before {
-	content: "\e62e";
+	content: "\e62f";
 }

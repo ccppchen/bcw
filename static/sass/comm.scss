@@ -40,7 +40,7 @@ input[readonly]:not(.cloned-text-input) { background-color: #fff; }
 .clearfix { @include pie-clearfix(); }
 .text-hidden1 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
 .text-hidden2 { overflow: hidden; text-overflow: ellipsis; white-space: normal !important; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-.span-red { width: 5px; height: 18px; display: inline-block; background: $red; margin: 6px 6px 6px 0; }
+.span-red { width: 5px; height: 18px; display: inline-block; background: $red; margin: 11px 6px 6px 0; }
 .bar-assertive { border-color: #e42112; background-color: #ef473a; color: #fff; display: flex;
     .cp-title { color: #fff; }
     .button { color: #fff; }

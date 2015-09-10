@@ -15,14 +15,16 @@ $bg: #f7f7f7; $red: #d13926; $borcolor: #ececec;
 .slideBox .bd li a { display: block }
 .slideBox .bd li img { width: 100%; height: 152px; display: block; }
 
-/* 多图滚动 */
-.scrollBox2 .bd ul { overflow: hidden; margin-bottom: 10px; }
-.scrollBox2 .bd li { width: 50%; float: left; font-size: 14px; padding: 0 4px 0 8px; margin-bottom: 10px; background: #fff; &:nth-child(2n){  padding: 0 8px 0 4px;} }
+/* 多图滚动   margin-bottom: 10px;  margin-bottom: 10px;*/
+.scrollBox2 .bd ul { overflow: hidden; }
+.scrollBox2 .bd li { width: 50%; float: left; font-size: 14px; padding: 0 4px 0 8px; background: #fff; 
+	&:nth-child(2n){  padding: 0 8px 0 4px;} 
+}
 .scrollBox2 .bd li a { display: block; position: relative; }
 .scrollBox2 .bd li a img{ height: auto;}// max-height:190px;
 .scrollBox2 .bd li p.text-hidden2 { text-align: left; font-size: 12px; color: #666; line-height: 18px; }
 // .scrollBox2 .bd li img { background: url(../images/loading.gif) center center no-repeat; }
-.scrollBox2 .hd { height: 30px; line-height: 30px; padding: 0 5px; margin: 8px 0; overflow: hidden; font-size: 18px; }
+.scrollBox2 .hd { height: 40px; line-height: 40px; padding: 0 5px;overflow: hidden; font-size: 18px; }
 .scrollBox2 .hd ul { display: inline-block; }
 .scrollBox2 .hd li { display: inline-block; width: 10px; height: 10px; background: #fff; margin: 0 5px; vertical-align: middle; overflow: hidden; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; text-indent: -8888em; border: 1px solid $red; }
 .scrollBox2 .hd .on { background: $red; }
@@ -47,3 +49,15 @@ $bg: #f7f7f7; $red: #d13926; $borcolor: #ececec;
 .scroller2 li { width: 72px; height: 72px; float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; background-color: #fff; font-size: 14px; overflow: hidden; text-align: center; }
 .scroller2 li:last-child{ border-right:none;}
 .scroller2 li.current{ border-bottom: 3px solid $red; color: $red;}
+
+// 0910 修复
+.slideBox .cp-hd li{ background: #fff;}
+.scrollBox2 .bd li a{
+	padding: 15px!important;
+}
+.scrollBox2 .bd ul li{ border-top: 1px solid #e7e7e7!important; height: 207px!important; margin-bottom: -1px!important; border-bottom: 1px solid #e7e7e7!important;}
+.scrollBox2 .bd ul li:nth-child(n){ border-right: 1px solid #e7e7e7!important}
+#scrollBox3.scrollBox2 .bd ul{ margin-bottom: 0!important;}
+.barContent .scrollBox2 .bd ul li{ margin-bottom: 10px!important;}
+.cp-scroll-box #scrollBox2 .bd{ border-bottom: 1px solid #e7e7e7!important;}
+.dar.scrollBox2 .bd ul li{ margin-bottom: 0!important;}
