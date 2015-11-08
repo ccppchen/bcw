@@ -10,10 +10,10 @@ sass_options = {:sourcemap => true}
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "styles"
-sass_dir = "sass"
-images_dir = "images"
-javascripts_dir = "scripts"
+css_dir = "/static/styles"
+sass_dir = "/static/sass"
+images_dir = "/static/images"
+javascripts_dir = "/static/scripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
